@@ -2,7 +2,7 @@ import json
 import re
 
 # 定义文件路径
-json_file_path = 'string.json'
+json_file_path = 'zh.json'
 
 # 读取JSON文件内容
 with open(json_file_path, 'r', encoding='utf-8') as json_file:
