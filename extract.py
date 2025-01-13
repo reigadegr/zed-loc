@@ -266,7 +266,11 @@ input_file_paths = [
     r'zed\crates\ollama\src\ollama.rs',
     # open_ai
     r'zed\crates\open_ai\src\open_ai.rs',
-    # paths
+    # outline 大纲
+    r'zed\crates\outline\src\outline.rs',
+    # outline_panel 大纲面板
+    r'zed\crates\outline_panel\src\outline_panel.rs',
+    # paths 路径
     r'zed\crates\paths\src\paths.rs',
     # prettier
     r'zed\crates\prettier\src\prettier.rs',
