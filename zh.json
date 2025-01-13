@@ -5863,7 +5863,7 @@
     },
     "zed/crates/util/src/paths.rs": {
         "failed to determine home directory": "",
-        "Invalid WTF-8 sequence: {bytes:?}": "",
+        "Invalid WTF-8 sequence: {bytes:?}": "无效的 WTF-8 序列：{bytes:?}",
         "sanitized": "",
         "windows": "",
         "Path matcher should match {path:?}": ""
