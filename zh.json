@@ -5915,7 +5915,7 @@
         "hello in a word": ""
     },
     "zed/crates/welcome/src/base_keymap_picker.rs": {
-        "Select a base keymap...": "",
+        "Select a base keymap...": "选择基础键盘映射",
         "Settings Changed": "设置已更改",
         "keymap": ""
     },
