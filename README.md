@@ -48,7 +48,8 @@ python3 extract.py
 python3 replace.py
 ```
 
-编译测试，如果编译报错，删除zed源码后重新克隆
+### 构建
+如果编译报错，删除zed源码后重新克隆
 
 ```bash
 cd zed
