@@ -26,7 +26,7 @@ cd zed-loc
 > 
 > 注意：提取、替换词条只能在 Windows 系统上运行，在Linux，Macos 上会报错。
 
-首先你需要自行同步 Zed 源码到本地，然后执行以下命令：
+首先你需要自行同步 Zed 源码到本地：
 
 ```bash
 git clone https://github.com/zed-industries/zed.git
@@ -40,13 +40,15 @@ python3 extract.py
 > [!caution]
 > 
 > 警告：提取脚本规则是将引号内所有内容全部提取，翻译时请留意不需要翻译的内容。
+>
+> 如有不需要翻译的词条请直接删除
 
 然后将`strings.json`文件另存为，以目标语言代码为文件名，词条翻译完成后，执行以下命令替换词条：
 ```bash
 python3 replace.py
 ```
 
-编译测试
+编译测试，
 
 ```bash
 cd zed
