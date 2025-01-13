@@ -803,7 +803,6 @@
         "set status to connected (connection id: {:?}, peer id: {:?})": "",
         "connection error: {:?}": "",
         "invalid rpc url": "无效 rpc url",
-        "Location": "位置",
         "missing location header in /rpc response": "",
         "unexpected /rpc response status {}": "",
         "https": "",
@@ -5904,8 +5903,6 @@
         "{} match{}": "",
         "Branches": "分支"
     },
-    "zed/crates/vim/src/change_list.rs": {
-    },
     "zed/crates/vim/src/mode_indicator.rs": {
         "recording @{reg} ": ""
     },
@@ -5919,37 +5916,31 @@
     },
     "zed/crates/welcome/src/base_keymap_picker.rs": {
         "Select a base keymap...": "",
-        "Settings Changed": "",
+        "Settings Changed": "设置已更改",
         "keymap": ""
     },
     "zed/crates/welcome/src/multibuffer_hint.rs": {
         "Edit and save files directly in the results multibuffer!": "",
-        "open_docs": "",
-        "Read more…": "",
-        "https://zed.dev/docs/multibuffers": "",
+        "Read more…": "阅读更多…",
         "Dismiss": "关闭",
-        "Dismiss this hint": ""
+        "Dismiss this hint": "关闭此提示"
     },
     "zed/crates/welcome/src/welcome.rs": {
         "false": "",
         "Welcome": "",
         "icons/logo_96.svg": "",
         "Welcome to Zed": "欢迎来到 Zed",
-        "The editor for what's next": "",
-        "Get Started": "",
-        "choose-theme": "",
+        "The editor for what's next": "下一代编辑器",
+        "Get Started": "现在开始",
         "Choose a Theme": "选择主题",
         "welcome page: change theme": "欢迎页：更改主题",
-        "choose-keymap": "",
         "Choose a Keymap": "选择键盘布局",
         "welcome page: change keymap": "",
-        "sign-in-to-copilot": "",
-        "Sign in to GitHub Copilot": "",
-        "welcome page: sign in to copilot": "",
-        "edit settings": "",
+        "Sign in to GitHub Copilot": "登录 GitHub Copilot",
+        "welcome page: sign in to copilot": "欢迎页：登录 Copilot",
         "Edit Settings": "编辑设置",
-        "welcome page: edit settings": "",
-        "Resources": "",
+        "welcome page: edit settings": "欢迎页：编辑设置",
+        "Resources": "资源",
         "Install the CLI": "在 CLI 中安装",
         "welcome page: install cli": "欢迎页：安装 CLI",
         "View Documentation": "查看文档",
@@ -5975,12 +5966,11 @@
         "See docs": "查看文档",
         "Response already sent": "",
         "Stream already closed": "",
-        "language_server_prompt_notification": "",
         "copy": "",
         "Copy Description": "复制描述",
         "close": "",
         "TODO {err:?}": "",
-        "{err}. Please try again.": "",
+        "{err}. Please try again.": "{err}。请重试。",
         "Ok": ""
     },
     "zed/crates/workspace/src/pane_group.rs": {
@@ -6021,7 +6011,6 @@
         "Search Project": "搜索项目",
         "Search Symbols": "搜索符号",
         "New Terminal": "新建终端",
-        "pane-tab-bar-split": "",
         "split": "",
         "Split Pane": "分割窗格",
         "Split Right": "向右分割",
