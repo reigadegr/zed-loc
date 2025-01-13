@@ -1,7 +1,7 @@
 import json
 import re
 
-# 定义文件路径
+# 定义文件路径，自行修改词条文件名
 json_file_path = 'zh.json'
 
 # 读取JSON文件内容
