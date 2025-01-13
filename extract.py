@@ -241,6 +241,18 @@ input_file_paths = [
     r'zed\crates\install_cli\src\install_cli.rs',
     # language
     r'zed\crates\language\src\buffer_tests.rs',
+    # language_model_selector
+    r'zed\crates\language_model_selector\src\language_model_selector.rs',
+    # language_selector
+    r'zed\crates\language_selector\src\active_buffer_language.rs',
+    r'zed\crates\language_selector\src\language_selector.rs',
+    # language_models
+    r'zed\crates\language_models\src\provider\anthropic.rs',
+    r'zed\crates\language_models\src\provider\copilot_chat.rs',
+    r'zed\crates\language_models\src\provider\google.rs',
+    r'zed\crates\language_models\src\provider\ollama.rs',
+    r'zed\crates\language_models\src\provider\open_ai.rs',
+    r'zed\crates\language_models\src\logging.rs',
     # markdown
     r'zed\crates\markdown\examples\markdown.rs',
     # media 媒体
@@ -363,6 +375,7 @@ input_file_paths = [
     r'zed\crates\time_format\src\time_format.rs',
     # title_bar
     r'zed\crates\title_bar\src\collab.rs',
+    r'zed\crates\title_bar\src\title_bar.rs',
     r'zed\crates\title_bar\src\window_controls.rs',
     # toolchain_selector
     r'zed\crates\toolchain_selector\src\active_toolchain.rs',
