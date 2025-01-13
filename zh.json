@@ -5926,8 +5926,7 @@
         "Dismiss this hint": "关闭此提示"
     },
     "zed/crates/welcome/src/welcome.rs": {
-        "false": "",
-        "Welcome": "",
+        "Welcome": "欢迎",
         "icons/logo_96.svg": "",
         "Welcome to Zed": "欢迎来到 Zed",
         "The editor for what's next": "下一代编辑器",
@@ -5947,7 +5946,7 @@
         "welcome page: view docs": "欢迎页：查看文档",
         "Explore Extensions": "探索扩展",
         "welcome page: open extensions": "欢迎页：打开扩展",
-        "Book Onboarding": "",
+        "Book Onboarding": "预定入职",
         "Enable Vim Mode": "启用 Vim 模式",
         "welcome page: toggle vim": "欢迎页：切换 Vim",
         "You can also toggle Vim Mode via the command palette or Editor Controls menu.": "您还可以通过命令面板或编辑器控件菜单切换 Vim 模式。",
