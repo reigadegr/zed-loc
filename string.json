@@ -436,7 +436,6 @@
         "Select a command...": "",
         "index cannot be zero, as we can never have a separator at 0th position": "",
         "command-entry-label-{ix}": "",
-        "{}": "",
         "create-your-command": "",
         "Create your custom command": "",
         "https://zed.dev/docs/extensions/slash-commands": "",
@@ -887,7 +886,6 @@
         "The result of the complex expression is: {}": ""
     },
     "zed/crates/assistant2/src/thread.rs": {
-        "{}": "",
         "New Thread": "",
         "User:": "",
         "Assistant:": "",
@@ -1129,7 +1127,6 @@
         "#{}": "",
         "channel store dropped": "",
         "no channel for id: {}": "",
-        "{}": "",
         "missing channel in response": "",
         "invite request already in progress": "",
         "member request already in progress": ""
@@ -1144,7 +1141,6 @@
         "parsing as path with position {argument_str}": "",
         "--": "",
         "Bundle detection": "",
-        "{}": "",
         "../../../script/uninstall.sh": "",
         "uninstall.sh": "",
         "sh": "",
@@ -1714,7 +1710,6 @@
         "no such buffer": "",
         "missing buffer snapshot": "",
         "no such snapshot": "",
-        "{}": "",
         "2": "",
         "3": "",
         "4": "",
@@ -3292,7 +3287,6 @@
         "inline-blame": "",
         "<no name>": "",
         "blame": "",
-        "{}": "",
         "Copy commit SHA": "",
         "Open permalink": "",
         "Text": "",
@@ -3700,7 +3694,6 @@
         " ˇbcˇΔ": "",
         "abˇcdef\\ngh\\nˇijk": "",
         "abcˇdef\\ngh\\nˇijk": "",
-        "{}": "",
         "ˇˇloremˇ  ipsum": "",
         "ˇloˇremˇ  ipsum": "",
         "ˇloremˇˇ  ipsum": "",
@@ -3849,7 +3842,6 @@
     },
     "zed/crates/extension/src/extension_host_proxy.rs": {},
     "zed/crates/extension/src/extension_manifest.rs": {
-        "{}": "",
         "commit": "",
         "invalid extension name": "",
         "extension.json": "",
@@ -3878,8 +3870,7 @@
         "zed:api-version": "",
         "OUT_DIR": "",
         "/version_bytes": "",
-        "./wit/since_v0.2.0": "",
-        "{}": ""
+        "./wit/since_v0.2.0": ""
     },
     "zed/crates/extension_api/src/http_client.rs": {
         "Method not set": "",
@@ -4168,7 +4159,6 @@
         "Feedback editor is never a multi-buffer": "",
         "Ready to submit your feedback?": "",
         "Yes, Submit!": "",
-        "{}": "",
         "OK": "",
         "Error submitting feedback": "",
         "/api/feedback": "",
@@ -4899,8 +4889,7 @@
         "custom": "",
         "Gemini 1.5 Pro": "",
         "Gemini 1.5 Flash": "",
-        "Gemini 2.0 Flash": "",
-        "{}": ""
+        "Gemini 2.0 Flash": ""
     },
     "zed/crates/gpui/examples/hello_world.rs": {
         "Hello, {}!": "",
@@ -5078,7 +5067,6 @@
         "Error retrieve windows version": "",
         "unknown": "",
         "Something went wrong while waiting {:?}": "",
-        "{}": "",
         "powershell.exe": "",
         "-command": "",
         "failed to spawn restart script: {:?}": "",
@@ -5313,7 +5301,6 @@
         "function: (field_expression value: (identifier) field: (field_identifier)) ": "",
         "type_arguments: (type_arguments (type_identifier))) ": "",
         "arguments: (arguments (identifier)))))))": "",
-        "{}": "",
         "(source_file (expression_statement (block)))": "",
         "(document (object))": "",
         "bye": "",
@@ -6178,7 +6165,6 @@
         "devDependencies": "",
         "2.5.1": "",
         "// Dummy prettier package file": "",
-        "{}": "",
         "/root/.config/zed/settings.json": "",
         "Should find no prettier for path hierarchy without it": "",
         "/root/work/project/src/index.js": "",
@@ -6354,22 +6340,14 @@
         "PATH": "",
         "using project environment variables from CLI. PATH={:?}": "",
         "using project environment variables shell launched in {:?}. PATH={:?}": "",
-        "ZED_ENVIRONMENT": "",
-        "cli": "",
-        "worktree-shell": "",
         "Failed to load shell environment in {}: not a directory": "",
         "Failed to load shell environment in {}: {}": "",
-        "ZED_FAKE_TEST_ENV": "",
         "true": "",
-        "ZED_SHELL_START": "",
         "SHELL": "",
         "Failed to get login environment. SHELL environment variable is not set": "",
         "fish": "",
         "emit fish_prompt;": "",
         "cd '{}';{} printf '%s' {marker}; /usr/bin/env; exit 0;": "",
-        "-l": "",
-        "-i": "",
-        "-c": "",
         "Failed to spawn login shell to source login environment variables. See logs for details": "",
         "login shell exited with {}": "",
         "Login shell exited with nonzero exit code. See logs for details": "",
@@ -6377,7 +6355,6 @@
         "Failed to parse stdout of env command. See logs for the output": ""
     },
     "zed/crates/project/src/image_store.rs": {
-        "{}": "",
         "Failed to load image content": "",
         "svg": "",
         "no such worktree": "",
@@ -6447,7 +6424,6 @@
         "textDocument/rename": "",
         "unhandled capability unregistration: {unreg:?}": "",
         "Language server {name} (id {server_id}) status update: {message}": "",
-        "{}": "",
         "Unknown server health: {status}\\n{formatted_message}": "",
         "No format ranges provided for buffer": "",
         "failed to format ranges via language server": "",
@@ -7469,7 +7445,6 @@
         "({})": "",
         "SshConnectionModal": "",
         "Failed to download remote server binary (version: {}, os: {}, arch: {}): {}": "",
-        "{}": "",
         "unknown": "",
         "Failed to open project: {:?}": "",
         "Failed to connect over SSH": "",
@@ -7500,7 +7475,6 @@
         "kernel process exited successfully": "",
         "kernel process exited with status: {:?}": "",
         "kernel process exited with error: {:?}": "",
-        "{}": "",
         "Failed to kill the kernel process: {}": "",
         "Invalid kernelspec directory: {path:?}": "",
         "Not a directory: {path:?}": "",
@@ -8037,8 +8011,7 @@
         "Index time: {:?}": "",
         "converting an anchor to a point": "",
         "✄✄✄✄✄✄✄✄✄✄✄✄✄✄ {:?} @ {} ✄✄✄✄✄✄✄✄✄✄✄✄✄✄": "",
-        "{:?}:{:?}:{:?}": "",
-        "{}": ""
+        "{:?}:{:?}:{:?}": ""
     },
     "zed/crates/semantic_index/src/embedding/cloud.rs": {
         "openai/text-embedding-3-small": "",
@@ -8165,7 +8138,6 @@
         "Invalid version string \\": ""
     },
     "zed/crates/settings/src/keymap_file.rs": {
-        "{}": "",
         ", ": "",
         "KeymapAction": "",
         "Expected array of length 2": "",
@@ -8204,7 +8176,6 @@
         "A default setting must be added to the `default.json` file": "",
         "unregistered setting type {}": "",
         "no default value for setting type": "",
-        "{}": "",
         "Failed to canonicalize settings path {:?}": "",
         "Failed to write settings to file {:?}": "",
         "settings must be an object": "",
@@ -8943,7 +8914,6 @@
     "zed/crates/text/src/text.rs": {
         "\\r\\n|\\r": "",
         "Failed to create LINE_SEPARATORS_REGEX": "",
-        "{}": "",
         "Buffer id cannot be 0.": "",
         "gave up waiting for edits": "",
         "gave up waiting for anchors": "",
@@ -8968,7 +8938,6 @@
     "zed/crates/theme_importer/src/main.rs": {
         "https://zed.dev/public/schema/themes/v0.2.0.json": "",
         "snake_case": "",
-        "{}": "",
         "theme_printer": "",
         "could not initialize logger": "",
         "Failed to open file at path: {:?}": "",
@@ -9322,7 +9291,6 @@
         "i o escape k ` .": ""
     },
     "zed/crates/vim/src/mode_indicator.rs": {
-        "{}": "",
         " ": "",
         "recording @{reg} ": "",
         "\\": "",
@@ -9501,7 +9469,6 @@
     },
     "zed/crates/welcome/src/multibuffer_hint.rs": {
         "MULTIBUFFER_HINT_SHOWN_COUNT": "",
-        "{}": "",
         "Edit and save files directly in the results multibuffer!": "",
         "open_docs": "",
         "Read more…": "",
@@ -9671,7 +9638,6 @@
         "Open a file or project to get started.": "",
         "This buffer": "",
         "{path} contains unsaved edits. Do you want to save it?": "",
-        "{}": "",
         "7": "",
         "3": "",
         "4": "",
@@ -9738,7 +9704,6 @@
         "FullScreen": "",
         "Fixed": "",
         "Window State did not have a valid string": "",
-        "{}": "",
         "No workspaces found": "",
         "Getting center group": "",
         "update_worktrees": "",
@@ -10104,7 +10069,6 @@
         "rust_begin_unwind": "",
         "_rust_begin_unwind": "",
         "TARGET": "",
-        "{}": "",
         "%Y_%m_%d %H_%M_%S": "",
         "zed-{timestamp}.panic": "",
         "{panic_data_json}": "",
@@ -10564,7 +10528,6 @@
         "<|start_of_file|>": "",
         "<|editable_region_start|>": "",
         "<|editable_region_end|>": "",
-        "{}": "",
         "InlineCompletion": "",
         "id": "",
         "path": "",
