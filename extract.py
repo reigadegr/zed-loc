@@ -11,7 +11,7 @@ input_file_paths = [
     r'zed\crates\anthropic\src\anthropic.rs',
     # r'zed\crates\anthropic\src\supported_countries.rs',
     r'zed\crates\assets\src\assets.rs',
-    # assistant
+    # assistant 助手
     r'zed\crates\assistant\src\assistant_panel.rs',
     r'zed\crates\assistant\src\assistant_settings.rs',
     r'zed\crates\assistant\src\context_store.rs',
@@ -24,6 +24,7 @@ input_file_paths = [
     r'zed\crates\assistant\src\slash_command.rs',
     r'zed\crates\assistant\src\streaming_diff.rs',
     r'zed\crates\assistant\src\terminal_inline_assistant.rs',
+    r'zed\crates\assistant\src\slash_command\terminal_command.rs',
     # assistant_slash_command
     r'zed\crates\assistant_slash_command\src\assistant_slash_command.rs',
     # assistant_tools
@@ -376,6 +377,7 @@ input_file_paths = [
     r'zed\crates\theme_importer\src\assets.rs',
     r'zed\crates\theme_importer\src\main.rs',
     r'zed\crates\theme_selector\src\theme_selector.rs',
+    # time_format 时间格式
     r'zed\crates\time_format\src\time_format.rs',
     # title_bar
     r'zed\crates\title_bar\src\collab.rs',
