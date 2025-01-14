@@ -15,11 +15,7 @@
         "Updating {extension_id} extension…": "更新 {extension_id} 扩展中…"
     },
     "zed/crates/anthropic/src/anthropic.rs": {
-        "schemars": "",
-        "custom": "",
         "invalid model id": "无效模型 ID",
-        "2023-06-01": "",
-        "Anthropic-Beta": "",
         "failed to serialize request": "序列化请求失败",
         "failed to construct request body": "构建请求体失败",
         "failed to send request to Anthropic": "发送请求到 Anthropic 失败",
@@ -223,7 +219,6 @@
         "create": "",
         "unknown operation {operation:?}": "",
         "worktree not found for {:?}": "",
-        "Rust": "",
         "rs": ""
     },
     "zed/crates/assistant/src/prompt_library.rs": {
@@ -234,8 +229,8 @@
         "No prompts found matching your search.": "无匹配您搜索的提示词。",
         "Search...": "搜索...",
         "Untitled": "未命名",
-        "Remove from Default Prompt": "",
-        "Built-in prompt": "",
+        "Remove from Default Prompt": "从默认提示词删除",
+        "Built-in prompt": "内置提示词",
         "Delete Prompt": "删除提示词",
         "Add to Default Prompt": "添加到默认提示词",
         "error while loading prompt: {:?}": "加载提示词时出错: {:?}",
@@ -244,8 +239,6 @@
         "Cancel": "取消",
         " copy": "",
         "{title_to_duplicate}{DUPLICATE_SUFFIX} {i}": "",
-        "prompt-list": "",
-        "new-prompt": "",
         "New Prompt": "新建提示词",
         "{} tokens": "{} 令牌",
         "Model: {}": "模型: {}",
@@ -305,7 +298,6 @@
         "Running test with {} iterations and seed {}": "",
         "Iteration {}": "",
         "Hello, world!": "",
-        "Rust": "",
         "Hello, Rust!": ""
     },
     "zed/crates/assistant/src/terminal_inline_assistant.rs": {
@@ -405,7 +397,6 @@
         "Lorem ipsum": "",
         "```\n<|CURSOR|>Lorem ipsum\n```": "",
         "failed to strip invalid spans, chunk size: {}": "",
-        "Rust": "",
         "rs": ""
     },
     "zed/crates/assistant2/src/context_store.rs": {
@@ -513,7 +504,6 @@
         "Running test with {} iterations and seed {}": "",
         "Iteration {}": "",
         "Hello, world!": "",
-        "Rust": "",
         "Hello, Rust!": ""
     },
     "zed/crates/assistant2/src/terminal_inline_assistant.rs": {
@@ -1651,7 +1641,6 @@
         "string": "",
         "punctuation": "",
         "keyword": "",
-        "Rust": "",
         "const": "",
         ":": "",
         ";": "",
@@ -1842,7 +1831,6 @@
         "Assert selections are {}": ""
     },
     "zed/crates/editor/src/editor.rs": {
-
         "wordwise": "",
         "done": "",
         "toggle": "",
@@ -1851,7 +1839,6 @@
         "buffer edited": "",
         "refresh requested": "",
         "excerpts removed": "",
-
         "⋯": "",
         "Editor Opened": "",
         "Editor": "",
@@ -1872,8 +1859,6 @@
         "The remote instance of Zed does not support this yet. It must be upgraded to {}": "",
         "required": "",
         "the latest version": "",
-        "linux": "",
-        "freebsd": "",
         "extend_selection not called with pending selection": "",
         "update_selection dispatched with no pending selection": "",
         "{}{}": "",
@@ -1963,8 +1948,6 @@
         "...": ""
     },
     "zed/crates/editor/src/element.rs": {
-        "linux": "",
-        "freebsd": "",
         "{number}": "",
         "expand_down_hit_area": "",
         "Expand Excerpt": "",
@@ -2865,7 +2848,6 @@
         "cannot measure after painting": ""
     },
     "zed/crates/gpui/src/executor.rs": {
-
         "\nbacktrace of waiting future:\n{:?}": "\n等待未来的回溯：\n{:?}",
         "\n  waiting on: {}\n": "\n  等待：{}\n",
         "parked with nothing left to run{waiting_message}{backtrace_message}": "",
@@ -2879,8 +2861,7 @@
         "node {} was not part of the reused subtree {:?}": "",
         "Workspace": ""
     },
-    "zed/crates/gpui/src/keymap.rs": {
-    },
+    "zed/crates/gpui/src/keymap.rs": {},
     "zed/crates/html_to_markdown/src/html_to_markdown.rs": {
         "failed to parse HTML": "",
         "failed to convert HTML to Markdown": "",
@@ -3135,7 +3116,6 @@
         "foo": ""
     },
     "zed/crates/media/src/media.rs": {
-
         "IOSurface": "",
         "framework": "",
         "C": "",
@@ -3748,7 +3728,6 @@
         "worktree_1": "",
         "worktree_2": "",
         "Without a worktree, only worktree-independent tasks should be listed": "",
-        "RUST_LOG": "",
         "label": "",
         "command": "",
         "echo": "",
@@ -4555,7 +4534,6 @@
         "no such connection: {}": "",
         "Peer": "",
         "connections": "",
-        "RUST_LOG": "",
         "unknown message type": "",
         "message 1": "",
         "message 2": "",
@@ -4748,7 +4726,6 @@
         "invalid expected chunk prefix {ix}: {expected_prefix:?}": "",
         "chunk ranges are not contiguous: {:?}": "",
         "chunks don't cover entire text {:?}": "",
-        "Rust": "",
         "rs": ""
     },
     "zed/crates/semantic_index/src/embedding_index.rs": {
@@ -4820,8 +4797,7 @@
         "missing minor version number": "",
         "missing patch version number": "",
         "{}.{}.{}": "",
-        "Invalid version string \\": "",
-        "": ""
+        "Invalid version string \\": ""
     },
     "zed/crates/settings/src/keymap_file.rs": {
         "{}": "",
@@ -4839,7 +4815,6 @@
     },
     "zed/crates/settings/src/settings_file.rs": {
         "empty-theme": "",
-
         "ui_font_family": "",
         "Courier": "",
         "ui_font_features": "",
@@ -4861,13 +4836,11 @@
         "A default setting must be added to the `default.json` file": "",
         "unregistered setting type {}": "",
         "no default value for setting type": "",
-
         "{}": "",
         "Failed to canonicalize settings path {:?}": "",
         "Failed to write settings to file {:?}": "",
         "settings must be an object": "",
         "Attempted to submit tasks into the settings store": "",
-
         "dev": "",
         "nightly": "",
         "stable": "",
@@ -4912,13 +4885,11 @@
         "languages": "",
         "JSON": "",
         "language_setting_1": "",
-        "Rust": "",
         "language_setting_2": "",
         "Max": "",
         ": 1, ": "",
         ": 2 }": "",
         ", ": "",
-
         "journal": ""
     },
     "zed/crates/settings_ui/src/appearance_settings_controls.rs": {
@@ -4950,7 +4921,6 @@
     },
     "zed/crates/snippet/src/snippet.rs": {
         "failed to parse snippet": "",
-
         "|": "",
         "expected a closing brace": "",
         "expected an integer": "",
@@ -4984,8 +4954,6 @@
         "main": "",
         ";": "",
         "CREATE TABLE {table_to_alter}({column})": "",
-        "linux": "",
-        "freebsd": "",
         "Sqlite call failed with code {} and message: {:?}": "",
         "alter": "",
         "table": "",
@@ -5071,7 +5039,6 @@
         "Failed to read int at index {index}": "",
         "Failed to read i64 at index {index}": "",
         "Failed to read text from column {index}": "",
-
         "Failed to read text length at {index}": "",
         "Column type returned was incorrect ": "",
         "Statement step returned SQLITE_MISUSE": "",
@@ -5124,7 +5091,6 @@
         "Close": ""
     },
     "zed/crates/task/src/task_template.rs": {
-
         "regular": "",
         "main": "",
         "default_true": "",
@@ -5141,7 +5107,6 @@
         "test_arg": "",
         "test_env_key": "",
         "test_env_var": "",
-
         "should not resolve task with blank label and/or command: {task_with_blank_property:?}": "",
         "test task": "",
         "echo 4": "",
@@ -5307,7 +5272,6 @@
         "55": "",
         "a.ts": "",
         "a": "",
-
         "Initial query should be empty": "",
         "With no global tasks and no open item, no tasks should be listed": "",
         "/dir/a.ts": "",
@@ -5364,7 +5328,6 @@
         "npm run build": "",
         "Another task from file $ZED_FILE": "",
         "npm run lint": "",
-        "Rust": "",
         "rs": "",
         "Rust task": "",
         "cargo check": "",
@@ -5381,7 +5344,6 @@
         "no task modal after `Spawn` action was dispatched": ""
     },
     "zed/crates/terminal/src/terminal.rs": {
-
         "<non-utf8 path> {}": "",
         "<none specified, using home directory> {}": "",
         "<none specified, could not find home directory>": "",
@@ -5401,10 +5363,7 @@
         "TERM": "",
         "xterm-256color": "",
         "TERM_PROGRAM_VERSION": "",
-
         "set color": "",
-        "linux": "",
-        "freebsd": "",
         "file://": "",
         "h": "",
         "left": "",
@@ -5502,8 +5461,6 @@
         "covered no terminals case above": "上面已覆盖无终端情况",
         "Should have handled 'allow_concurrent_runs && use_new_terminal' case above": "应已处理“允许并发运行且使用新终端”情况",
         "\\": "",
-
-        "windows": "",
         "{shell} -i -c '{}'": "",
         "{shell} -C '{}'": "",
         "{shell} /C '{}'": "",
@@ -5575,7 +5532,6 @@
         "Rerun task": ""
     },
     "zed/crates/text/src/text.rs": {
-
         "\\r\n|\\r": "",
         "Failed to create LINE_SEPARATORS_REGEX": "",
         "{}": "",
@@ -5597,8 +5553,7 @@
         "../../assets": "",
         "fonts/**/*": "",
         "*.DS_Store": "",
-        "could not find asset at path \\": "",
-        "": ""
+        "could not find asset at path \\": ""
     },
     "zed/crates/theme_importer/src/main.rs": {
         "https://zed.dev/public/schema/themes/v0.2.0.json": "",
@@ -5716,7 +5671,6 @@
         "failed to determine home directory": "",
         "Invalid WTF-8 sequence: {bytes:?}": "无效的 WTF-8 序列：{bytes:?}",
         "sanitized": "",
-        "windows": "",
         "Path matcher should match {path:?}": ""
     },
     "zed/crates/util/src/test.rs": {
@@ -6026,7 +5980,6 @@
         "stopped following": "",
         "missing view variant": "",
         "failed to construct view from leader (maybe from a different version of zed?)": "",
-        "windows": "",
         "failed to send serializable item over channel: {}": "",
         "Failed to save": "",
         "https://github.com/zed-industries/zed/issues/new?assignees=&labels=admin+read%2Ctriage%2Cbug&projects=&template=1_bug_report.yml": "",

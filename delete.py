@@ -2,7 +2,7 @@ import json
 import yaml
 
 # 定义文件路径
-json_file_path = 'string.json'
+json_file_path = 'zh.json'
 yaml_file_path = 'del.yaml'
 
 # 读取JSON文件内容

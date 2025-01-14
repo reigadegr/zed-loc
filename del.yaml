@@ -29,7 +29,6 @@ global: # 全局规则，对所有文件生效
   - "claude-3-haiku"
   - "claude-3-haiku-latest"
   - "custom"
-  - "invalid model id"
   - "Claude 3.5 Sonnet"
   - "Claude 3.5 Haiku"
   - "Claude 3 Opus"
@@ -83,6 +82,9 @@ global: # 全局规则，对所有文件生效
   - "```"
   - "\\n"
   - "/{} {}"
+"zed/crates/assistant/src/prompt_library.rs":
+  - "prompt-list"
+  - "new-prompt"
 "zed/crates/copilot/src/copilot_chat.rs":
   - "Authorization"
   - "Content-Type"
