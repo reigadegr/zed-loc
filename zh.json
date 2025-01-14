@@ -1842,7 +1842,7 @@
         "Assert selections are {}": ""
     },
     "zed/crates/editor/src/editor.rs": {
-        
+
         "wordwise": "",
         "done": "",
         "toggle": "",
@@ -1851,7 +1851,7 @@
         "buffer edited": "",
         "refresh requested": "",
         "excerpts removed": "",
-        
+
         "⋯": "",
         "Editor Opened": "",
         "Editor": "",
@@ -2502,14 +2502,14 @@
         "Ready to submit your feedback?": "准备提交您的反馈？",
         "Yes, Submit!": "是，提交！",
         "OK": "",
-        "Error submitting feedback": "",
+        "Error submitting feedback": "提交反馈失败",
         "Feedback API failed with error: {}": "",
-        "Submitting...": "",
+        "Submitting...": "提交中...",
         "Submit": "提交",
         "Give Feedback": "提供反馈",
-        "Feedback must be at least {} characters.": "",
-        "Characters: {}": "",
-        "Provide an email address if you want us to be able to reply.": "",
+        "Feedback must be at least {} characters.": "反馈必须",
+        "Characters: {}": "字数：{}",
+        "Provide an email address if you want us to be able to reply.": "如果您想我们回复请提供电子邮件地址。",
         "Zed Repository": "Zed 仓库",
         "Cancel": "取消",
         "Submit feedback to the Zed team.": "提交反馈给 Zed 团队。"
@@ -2528,17 +2528,7 @@
         "Wrong match for bandana query '{bandana_query}'": "",
         "Matching abs path should be the only match": "",
         "Mismatching abs path should produce no matches": "",
-        "其他": "",
-        "S数据表格": "",
         "some content": "",
-        "t": "",
-        "其他/S数据表格/task.xlsx": "",
-        "// First Rust file": "",
-        "/src": "",
-        "test": "",
-        "second.rs": "",
-        "// Second Rust file": "",
-        "{file_query}:{file_row}:{file_column}": "",
         "Finder should have a query after the update_matches call": "",
         "Expected to have 1 selection (caret) after file finder confirm, but got: {all_selections:?}": "",
         "Caret selection should have its start and end at the same position": "",
@@ -2546,63 +2536,16 @@
         "Query inside file should get caret with the same focus column": "",
         "Excessive rows (as in query outside file borders) should get trimmed to last file row": "",
         "Excessive columns (as in query outside file borders) should get trimmed to selected row's last column": "",
-        "/dir": "",
-        "hello": "",
-        "goodbye": "",
-        "halogen-light": "",
-        "happiness": "",
-        "height": "",
-        "hi": "",
-        "hiccup": "",
-        "/ancestor": "",
-        ".gitignore": "",
-        "ignored-root": "",
-        "tracked-root": "",
-        "/ancestor/tracked-root": "",
-        "/ancestor/ignored-root": "",
-        "the-parent-dir": "",
-        "the-file": "",
-        "/root/the-parent-dir/the-file": "",
-        "thf": "",
-        "thf/": "",
-        "dir1": "",
-        "a.txt": "",
-        "dir2": "",
-        "b.txt": "",
-        "dir2/b.txt": "",
-        "dir2/a.txt": "",
-        "dir1/a.txt": "",
-        "dir3": "",
-        "dir": "",
-        "third.rs": "",
-        "// Third Rust file": "",
-        "fir": "",
-        "Should have no history before opening any files": "",
-        "sec": "",
-        "test/first.rs": "",
-        "/src/test/first.rs": "",
         "Should show 1st opened item in the history when opening the 2nd item": "",
-        "thi": "",
-        "test/second.rs": "",
-        "/src/test/second.rs": "",
-        "test/third.rs": "",
-        "/src/test/third.rs": "",
-        "/external-src": "",
-        "fourth.rs": "",
-        "// Fourth Rust file": "",
-        "/external-src/test/third.rs": "",
         "External file should get opened in a new worktree": "",
         "New worktree should have a different id": "",
         "Should show external file with its full path in the history after it was open": "",
         "Should keep external file with history updates": "",
         "Should select the next item in the history": "",
         "Should wrap around the history and start all over": "",
-        "f": "",
         "Only one history item contains {first_query}, it should be present and others should be filtered out": "",
         "Should have path matches for history items after querying": "",
         "Only one non-history item contains {first_query}, it should be present": "",
-        "test/fourth.rs": "",
-        "fsdasdsa": "",
         "No search entries should match {second_query}": "",
         "Only one history item contains {first_query_again}, it should be present and others should be filtered out, even after non-matching query": "",
         "Only one non-history item contains {first_query_again}, it should be present, even after non-matching query": "",
@@ -2922,7 +2865,7 @@
         "cannot measure after painting": ""
     },
     "zed/crates/gpui/src/executor.rs": {
-        
+
         "\nbacktrace of waiting future:\n{:?}": "\n等待未来的回溯：\n{:?}",
         "\n  waiting on: {}\n": "\n  等待：{}\n",
         "parked with nothing left to run{waiting_message}{backtrace_message}": "",
@@ -3192,7 +3135,7 @@
         "foo": ""
     },
     "zed/crates/media/src/media.rs": {
-        
+
         "IOSurface": "",
         "framework": "",
         "C": "",
@@ -3802,7 +3745,6 @@
         "static_source_2": "",
         ".zed": "",
         "local worktree tasks from directory \\": "",
-        
         "worktree_1": "",
         "worktree_2": "",
         "Without a worktree, only worktree-independent tasks should be listed": "",
@@ -3874,12 +3816,12 @@
         "Fold Directory": "折叠文件夹",
         "Cut": "剪切",
         "Copy": "复制",
-        "Duplicate": "",
+        "Duplicate": "创建副本",
         "Paste": "粘贴",
         "Copy Path": "复制路径",
         "Copy Relative Path": "复制相对路径",
         "Rename": "重命名",
-        "Trash": "垃圾",
+        "Trash": "回收",
         "Delete": "删除",
         "Add Folder to Project…": "添加文件夹到项目…",
         "Remove from Project": "从项目中移除",
@@ -4897,7 +4839,7 @@
     },
     "zed/crates/settings/src/settings_file.rs": {
         "empty-theme": "",
-        
+
         "ui_font_family": "",
         "Courier": "",
         "ui_font_features": "",
@@ -4919,13 +4861,13 @@
         "A default setting must be added to the `default.json` file": "",
         "unregistered setting type {}": "",
         "no default value for setting type": "",
-        
+
         "{}": "",
         "Failed to canonicalize settings path {:?}": "",
         "Failed to write settings to file {:?}": "",
         "settings must be an object": "",
         "Attempted to submit tasks into the settings store": "",
-        
+
         "dev": "",
         "nightly": "",
         "stable": "",
@@ -4976,7 +4918,7 @@
         ": 1, ": "",
         ": 2 }": "",
         ", ": "",
-        
+
         "journal": ""
     },
     "zed/crates/settings_ui/src/appearance_settings_controls.rs": {
@@ -5008,47 +4950,18 @@
     },
     "zed/crates/snippet/src/snippet.rs": {
         "failed to parse snippet": "",
-        
+
         "|": "",
         "expected a closing brace": "",
         "expected an integer": "",
         "Placeholder choice doesn't contain closing pipe-character '|'": "",
-        "one-two-three": "",
-        "one$1two": "",
-        "onetwo": "",
-        "one$123-$99-two": "",
-        "one--two": "",
-        "foo.$1": "",
-        "foo.": "",
-        "<div class=": "",
-        ">$0</div>": "",
-        "></div>": "",
-        "one${1:two}three${2:four}": "",
-        "onetwothreefour": "",
-        "type ${1|i32, u32|} = $2": "",
         "Should be able to unpack choice placeholders": "",
-        "type i32 = ": "",
-        "i32": "",
-        " u32": "",
-        "${1|\\$\\{1\\|one\\,two\\,tree\\|\\}|}": "",
-        "Should be able to parse choice with escape characters": "",
-        "${1|one,two,tree|}": "",
-        "for (${1:var ${2:i} = 0; ${2:i} < ${3:${4:array}.length}; ${2:i}++}) {$0}": "",
-        "for (var i = 0; i < array.length; i++) {}": "",
-        "\\": "",
-        ": $1": "",
-        ": ": "",
-        "{a\\\\}": "",
-        "{a}": "",
-        "a\\\\b": "",
-        "one\\\\\\\\$1two": "",
-        "one\\\\two": ""
+        "Should be able to parse choice with escape characters": ""
     },
     "zed/crates/snippets_ui/src/snippets_ui.rs": {
         "snippets": "",
         "Global": "",
-        "Select snippet scope...": "",
-        ".json": ""
+        "Select snippet scope...": ""
     },
     "zed/crates/sqlez/src/bindable.rs": {
         "Failed to bind bool at index {start_index}": "",
@@ -5158,7 +5071,7 @@
         "Failed to read int at index {index}": "",
         "Failed to read i64 at index {index}": "",
         "Failed to read text from column {index}": "",
-        
+
         "Failed to read text length at {index}": "",
         "Column type returned was incorrect ": "",
         "Statement step returned SQLITE_MISUSE": "",
@@ -5211,7 +5124,7 @@
         "Close": ""
     },
     "zed/crates/task/src/task_template.rs": {
-        
+
         "regular": "",
         "main": "",
         "default_true": "",
@@ -5228,7 +5141,7 @@
         "test_arg": "",
         "test_env_key": "",
         "test_env_var": "",
-        
+
         "should not resolve task with blank label and/or command: {task_with_blank_property:?}": "",
         "test task": "",
         "echo 4": "",
@@ -5394,7 +5307,7 @@
         "55": "",
         "a.ts": "",
         "a": "",
-        
+
         "Initial query should be empty": "",
         "With no global tasks and no open item, no tasks should be listed": "",
         "/dir/a.ts": "",
@@ -5468,7 +5381,7 @@
         "no task modal after `Spawn` action was dispatched": ""
     },
     "zed/crates/terminal/src/terminal.rs": {
-        
+
         "<non-utf8 path> {}": "",
         "<none specified, using home directory> {}": "",
         "<none specified, could not find home directory>": "",
@@ -5488,7 +5401,7 @@
         "TERM": "",
         "xterm-256color": "",
         "TERM_PROGRAM_VERSION": "",
-        
+
         "set color": "",
         "linux": "",
         "freebsd": "",
@@ -5589,7 +5502,7 @@
         "covered no terminals case above": "上面已覆盖无终端情况",
         "Should have handled 'allow_concurrent_runs && use_new_terminal' case above": "应已处理“允许并发运行且使用新终端”情况",
         "\\": "",
-        
+
         "windows": "",
         "{shell} -i -c '{}'": "",
         "{shell} -C '{}'": "",
@@ -5659,19 +5572,10 @@
         "~": "",
         ".": "",
         "rerun-icon": "",
-        "Rerun task": "",
-        "term-tab-icon": "",
-        "/root.txt": "",
-        "/root/": "",
-        "/root1/": "",
-        "/root2.txt": "",
-        "/root2/": "",
-        
-        "test(\\w)": "",
-        "test\\(\\\\w\\)": ""
+        "Rerun task": ""
     },
     "zed/crates/text/src/text.rs": {
-        
+
         "\\r\n|\\r": "",
         "Failed to create LINE_SEPARATORS_REGEX": "",
         "{}": "",
@@ -5687,8 +5591,7 @@
         "invalid insertion": "",
         "invalid anchor {:?}. buffer id: {}, version: {:?}": "",
         "invalid version": "",
-        "offset {} is out of range, max allowed is {}": "",
-        "\n": ""
+        "offset {} is out of range, max allowed is {}": ""
     },
     "zed/crates/theme_importer/src/assets.rs": {
         "../../assets": "",
@@ -5699,13 +5602,9 @@
     },
     "zed/crates/theme_importer/src/main.rs": {
         "https://zed.dev/public/schema/themes/v0.2.0.json": "",
-        
-        "{}": "",
-        "theme_printer": "",
         "could not initialize logger": "",
         "Failed to open file at path: {:?}": "",
         "failed to parse theme {theme_file_path:?}": "",
-        
         "$schema": "",
         "Done!": ""
     },
@@ -5742,12 +5641,12 @@
         "Valid timezone offset": "有效时区偏移"
     },
     "zed/crates/title_bar/src/collab.rs": {
-        "Screen Share Disabled": "",
-        "Screen Share Enabled": "",
-        "Sharing Screen Failed": "",
+        "Screen Share Disabled": "禁用屏幕共享",
+        "Screen Share Enabled": "启用屏幕共享",
+        "Sharing Screen Failed": "屏幕共享失败",
         "{:?}\n\nPlease check that you have given Zed permissions to record your screen in Settings.": "",
-        "Microphone Enabled": "",
-        "Microphone Disabled": "",
+        "Microphone Enabled": "已启用话筒",
+        "Microphone Disabled": "已禁用话筒",
         "collaborator-list": "",
         "collaborator": "",
         "Follow {login}": "",
@@ -5770,8 +5669,8 @@
         "Mute Audio": "",
         "Microphone will be muted": "",
         "screen-share": "",
-        "Stop Sharing Screen": "",
-        "Share Screen": ""
+        "Stop Sharing Screen": "停止共享屏幕",
+        "Share Screen": "共享屏幕"
     },
     "zed/crates/title_bar/src/title_bar.rs": {
         "Connecting to: {host}": "连接到：{host}",
@@ -5872,7 +5771,7 @@
         "keymap": ""
     },
     "zed/crates/welcome/src/multibuffer_hint.rs": {
-        "Edit and save files directly in the results multibuffer!": "",
+        "Edit and save files directly in the results multibuffer!": "直接在结果多缓冲区中编辑和保存文件！",
         "Read more…": "阅读更多…",
         "Dismiss": "关闭",
         "Dismiss this hint": "关闭此提示"
