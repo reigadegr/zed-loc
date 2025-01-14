@@ -8,6 +8,7 @@ global: # 全局规则，对所有文件生效
   - ""
   - "arrow-circle"
   - "test-support"
+  - "{}"
 "zed/crates/activity_indicator/src/activity_indicator.rs":
   - " ({}%)"
   - "arrow-circle"
@@ -89,6 +90,15 @@ global: # 全局规则，对所有文件生效
   - "Authorization"
   - "Content-Type"
   - "Bearer {}"
+"zed/crates/project/src/environment.rs":
+  - "ZED_ENVIRONMENT"
+  - "cli"
+  - "worktree-shell"
+  - "-l"
+  - "-i"
+  - "-c"
+  - "ZED_FAKE_TEST_ENV"
+  - "ZED_SHELL_START"
 "zed/crates/time_format/src/time_format.rs":
   - "2021-12-31 3:00AM"
   - "Today at x"

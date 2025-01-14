@@ -16,6 +16,7 @@
         "Updating {extension_id} extension…": ""
     },
     "zed/crates/anthropic/src/anthropic.rs": {
+        "invalid model id": "",
         "failed to serialize request": "",
         "failed to construct request body": "",
         "failed to send request to Anthropic": "",
@@ -383,8 +384,6 @@
         "Cancel": "",
         " copy": "",
         "{title_to_duplicate}{DUPLICATE_SUFFIX} {i}": "",
-        "prompt-list": "",
-        "new-prompt": "",
         "New Prompt": "",
         "prompt-editor": "",
         "prompt-editor-inner": "",
@@ -6368,6 +6367,9 @@
         "fish": "",
         "emit fish_prompt;": "",
         "cd '{}';{} printf '%s' {marker}; /usr/bin/env; exit 0;": "",
+        "-l": "",
+        "-i": "",
+        "-c": "",
         "Failed to spawn login shell to source login environment variables. See logs for details": "",
         "login shell exited with {}": "",
         "Login shell exited with nonzero exit code. See logs for details": "",
@@ -6377,6 +6379,7 @@
     "zed/crates/project/src/image_store.rs": {
         "{}": "",
         "Failed to load image content": "",
+        "svg": "",
         "no such worktree": "",
         "Image format not supported": "",
         "Opening images from remote is not supported": "",
