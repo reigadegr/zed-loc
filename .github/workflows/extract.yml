@@ -13,6 +13,8 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: "3.10"
+      - name: 安装依赖
+        run: pip install yaml
       - name: 手动同步 zed 源代码
         uses: actions/checkout@v4
         with:
