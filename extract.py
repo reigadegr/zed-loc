@@ -409,6 +409,7 @@ input_file_paths = [
     r'zed\crates\workspace\src\persistence.rs',
     r'zed\crates\workspace\src\theme_preview.rs',
     r'zed\crates\workspace\src\workspace.rs',
+    r'zed\crates\worktree\src\worktree.rs',
     # worktree 工作树
     r'zed\crates\worktree\src\worktree_settings.rs',
     # zed

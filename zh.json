@@ -38,7 +38,7 @@
     "zed/crates/assets/src/assets.rs": {
         "could not find asset at path \"{}\"": "无法在路径 \"{}\" 找到资源",
         "fonts": "",
-        "Assets should never return None": "资源永远不应返回 None",
+        "Assets should never return None": "资源永远不应返回空",
         "fonts/plex-mono/ZedPlexMono-Regular.ttf": ""
     },
     "zed/crates/assistant/src/assistant_panel.rs": {
@@ -184,7 +184,7 @@
         "Generate": "生成",
         "{action}…{context_keybinding} • ↓↑ for history": "{action}…{context_keybinding} • ↓↑ 查看历史",
         "assist not found": "未找到助手",
-        "inline assist": "",
+        "inline assist": "内联助手",
         "Previous Alternative": "上一个替代方案",
         "Next Alternative": "下一个替代方案",
         "Tokens Used ({} from the Assistant Panel)": "令牌使用情况 (来自助手面板的 {})",
@@ -210,7 +210,7 @@
         "failed to strip invalid spans, chunk size: {}": ""
     },
     "zed/crates/assistant/src/patch.rs": {
-        "missing path": "",
+        "missing path": "路径丢失",
         "missing operation": "",
         "update": "",
         "missing old_text": "",
@@ -218,8 +218,7 @@
         "delete": "",
         "create": "",
         "unknown operation {operation:?}": "",
-        "worktree not found for {:?}": "",
-        "rs": ""
+        "worktree not found for {:?}": ""
     },
     "zed/crates/assistant/src/prompt_library.rs": {
         "This prompt supports special functionality.\n": "该提示支持特殊功能。\n",
@@ -260,19 +259,8 @@
         "Registering prompt template override: {}": "注册提示词模板覆盖: {}",
         "Prompt template overrides directory removed. Restoring built-in prompt templates.": "提示词模板覆盖目录已移除。恢复内置提示词模板。",
         "Reloading prompt template override: {}": "重载提示词模板覆盖: {}",
-        "prompts": "",
         "Registering built-in prompt template: {}": "注册内置提示词模板: {}",
-        "Markdown": "",
-        "Plain Text": "",
-        "text": "",
-        "code": "",
-        "<insert_here></insert_here>": "",
-        "<rewrite_this>\n": "",
-        "\n</rewrite_this>": "",
-        "content_prompt": "",
-        "terminal_assistant_prompt": "",
-        "suggest_edits": "",
-        "project_slash_command": ""
+        "Plain Text": ""
     },
     "zed/crates/assistant/src/slash_command_picker.rs": {
         "Select a command...": "选择一个命令...",
@@ -396,8 +384,7 @@
         "Lorem<|CURSOR|> ipsum": "",
         "Lorem ipsum": "",
         "```\n<|CURSOR|>Lorem ipsum\n```": "",
-        "failed to strip invalid spans, chunk size: {}": "",
-        "rs": ""
+        "failed to strip invalid spans, chunk size: {}": ""
     },
     "zed/crates/assistant2/src/context_store.rs": {
         "failed to read project": "读取项目失败",
@@ -1973,7 +1960,6 @@
         "inline-blame": "",
         "<no name>": "",
         "blame": "",
-        "{}": "",
         "Copy commit SHA": "",
         "Open permalink": "",
         "Text": "",
@@ -4280,7 +4266,6 @@
         "kernel process exited successfully": "",
         "kernel process exited with status: {:?}": "",
         "kernel process exited with error: {:?}": "",
-        "{}": "",
         "Failed to kill the kernel process: {}": "",
         "Invalid kernelspec directory: {path:?}": "",
         "Not a directory: {path:?}": "",
@@ -4683,7 +4668,7 @@
     },
     "zed/crates/search/src/search.rs": {
         "Match Whole Words": "全字匹配",
-        "Match Case Sensitively": "区分大小写匹配",
+        "Match Case Sensitively": "区分大小写",
         "Also search files ignored by configuration": "也搜索配置忽略的文件",
         "Use Regular Expressions": "使用正则表达式",
         "{:?} is not a named SearchOption": "{:?} 不是一个命名的搜索选项",
@@ -4708,25 +4693,12 @@
     },
     "zed/crates/semantic_index/src/chunking.rs": {
         "failed to parse file {path:?} for chunking": "",
-        "lib.rs": "",
-        "Self {": "",
-        "struct Person {": "",
-        "impl Person {": "",
         "    /// Returns the first name": "",
-        "    fn last_name": "",
-        "struct T": "",
-        "struct V": "",
-        "struct W": "",
-        "}": "",
-        "struct S {": "",
-        "struct U": "",
-        "4, h: u64, i: u64": "",
         "unexpected number of chunks: {chunks:?}": "",
         "chunk {ix} starts at unexpected offset {}. expected {}": "",
         "invalid expected chunk prefix {ix}: {expected_prefix:?}": "",
         "chunk ranges are not contiguous: {:?}": "",
-        "chunks don't cover entire text {:?}": "",
-        "rs": ""
+        "chunks don't cover entire text {:?}": ""
     },
     "zed/crates/semantic_index/src/embedding_index.rs": {
         "failed to create read transaction": "",
@@ -4744,7 +4716,6 @@
         "chunk {} of {}. length: {}": "",
         "prev": "",
         "next": "",
-        "ProjectIndexDebugView": "",
         "Project Index (Debug)": "项目索引 (调试)"
     },
     "zed/crates/semantic_index/src/project_index.rs": {
@@ -4765,26 +4736,11 @@
         "No SemanticDb, skipping project index": "无 SemanticDb，跳过项目索引",
         "garbage in": "",
         "garbage out": "",
-        "fixture": "",
-        "main.rs": "",
-        "needle.md": "",
         "garbage in, garbage out": "",
         "should have found some results, but only found {:?}": "",
         "result: {:?}": "",
         "score: {:?}": "",
-        "fixture/needle.md": "",
-        "cannot embed text containing a 'g' character": "",
-        "abcdefghijklmnop": "",
-        "qrstuvwxyz": "",
-        "qrst": "",
-        "uvwx": "",
-        "yz": "",
-        "four": "",
-        "fake_project/file1.txt": "",
-        "one\ntwo\nthree\n": "",
-        "two": "",
-        "two\nthree\nfour\n": "",
-        "fake_project/file2.txt": ""
+        "cannot embed text containing a 'g' character": ""
     },
     "zed/crates/semantic_index/src/worktree_index.rs": {
         "digests-{}": "",
@@ -4800,7 +4756,6 @@
         "Invalid version string \\": ""
     },
     "zed/crates/settings/src/keymap_file.rs": {
-        "{}": "",
         ", ": "",
         "KeymapAction": "",
         "Expected array of length 2": "",
@@ -4836,7 +4791,6 @@
         "A default setting must be added to the `default.json` file": "",
         "unregistered setting type {}": "",
         "no default value for setting type": "",
-        "{}": "",
         "Failed to canonicalize settings path {:?}": "",
         "Failed to write settings to file {:?}": "",
         "settings must be an object": "",
@@ -5328,7 +5282,6 @@
         "npm run build": "",
         "Another task from file $ZED_FILE": "",
         "npm run lint": "",
-        "rs": "",
         "Rust task": "",
         "cargo check": "",
         "/dir/a1.ts": "",
@@ -5534,7 +5487,6 @@
     "zed/crates/text/src/text.rs": {
         "\\r\n|\\r": "",
         "Failed to create LINE_SEPARATORS_REGEX": "",
-        "{}": "",
         "Buffer id cannot be 0.": "",
         "gave up waiting for edits": "",
         "gave up waiting for anchors": "",
