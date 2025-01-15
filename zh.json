@@ -315,6 +315,26 @@
     "Tokens Used by Inline Assistant": "令牌使用情况",
     "Click to Open Assistant Panel": "点击打开助手面板"
   },
+  "zed/crates/assistant/src/slash_command/diagnostics_command.rs": {
+    "diagnostics": "",
+    "Insert diagnostics": "",
+    "workspace was dropped": "",
+    "No diagnostics found": "",
+    "diagnostics: {}": "",
+    "Diagnostics": "",
+    " {} errors": "",
+    " {} warnings": "",
+    "warning": "",
+    "error": ""
+  },
+  "zed/crates/assistant/src/slash_command/terminal_command.rs": {
+    "terminal": "",
+    "Insert terminal output": "",
+    "workspace was dropped": "",
+    "no active terminal": "",
+    "Terminal output:\n": "",
+    "Terminal": ""
+  },
   "zed/crates/assistant_slash_command/src/assistant_slash_command.rs": {
     "Hello, world!": "",
     "Section 1": "",
@@ -5315,8 +5335,6 @@
     "DELETE FROM terminals WHERE workspace_id = ? AND item_id NOT IN ({placeholders})": ""
   },
   "zed/crates/terminal_view/src/terminal_panel.rs": {
-    "TerminalPanel": "",
-    "terminal-tab-bar-popover-menu": "",
     "plus": "",
     "New…": "新建…",
     "New Terminal": "新建终端",
@@ -5326,42 +5344,18 @@
     "Split Left": "向左分割",
     "Split Up": "向上分割",
     "Split Down": "向下分割",
-    "toggle_zoom": "切换缩放",
     "Zoom Out": "缩小",
     "Zoom In": "放大",
     "covered no terminals case above": "上面已覆盖无终端情况",
     "Should have handled 'allow_concurrent_runs && use_new_terminal' case above": "应已处理“允许并发运行且使用新终端”情况",
-    "\\": "",
-    "{shell} -i -c '{}'": "",
-    "{shell} -C '{}'": "",
-    "{shell} /C '{}'": "",
-    "-i": "",
-    "-c": "",
-    "-C": "",
-    "/C": "",
     "terminal not yet supported for remote projects": "",
     "retrieving active terminal item in the workspace": "",
-    " {path:?}": "",
     "Terminal Panel": "终端面板",
-    "terminal_inline_assistant": "",
-    "Inline Assist": "",
-    "SHELL": "",
-    "Error finding SHELL in env.": "",
-    "powershell": "",
-    "powershell.exe": "",
-    "pwsh": "",
-    "pwsh.exe": "",
-    "cmd": "",
-    "cmd.exe": "",
-    "${": "",
-    "}": "",
-    "%{}%": "",
-    "$": "",
-    "$env:": "",
-    "$env:{}": ""
+    "Inline Assist": "内联助手",
+    "Error finding SHELL in env.": ""
   },
   "zed/crates/terminal_view/src/terminal_tab_tooltip.rs": {
-    "Process ID (PID): {}": ""
+    "Process ID (PID): {}": "进程 ID(PID)"
   },
   "zed/crates/terminal_view/src/terminal_view.rs": {
     "New Terminal": "新建终端",
