@@ -384,6 +384,7 @@ input_file_paths = [
     # time_format 时间格式
     r'zed\crates\time_format\src\time_format.rs',
     # title_bar
+    r'zed\crates\title_bar\src\application_menu.rs',
     r'zed\crates\title_bar\src\collab.rs',
     r'zed\crates\title_bar\src\title_bar.rs',
     r'zed\crates\title_bar\src\window_controls.rs',

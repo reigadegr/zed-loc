@@ -57,8 +57,7 @@
     "no context found with ID: {}": "无 ID 为 {} 的上下文",
     "No language model provider configured": "无语言模型提供者配置",
     "Cancel": "取消",
-    "assistant panel": "",
-    "AssistantPanel": "",
+    "assistant panel": "助手面板",
     "Assistant Panel": "助手面板",
     "Tool Result: {tool_use_id}": "工具结果: {tool_use_id}",
     "Press": "按",
@@ -438,7 +437,7 @@
     "Generate": "生成",
     "Transform": "",
     "{keybinding} to chat ― ": "{keybinding} 聊天 - ",
-    "{action}… ({assistant_panel_keybinding}↓↑ for history)": "{action}…{context_keybinding} • ↓↑ 查看历史",
+    "{action}… ({assistant_panel_keybinding}↓↑ for history)": "{action}…({assistant_panel_keybinding} • ↓↑ 查看历史)",
     "inline assist": "",
     "start": "",
     "stop": "",
@@ -5354,7 +5353,7 @@
     "Error finding SHELL in env.": ""
   },
   "zed/crates/terminal_view/src/terminal_tab_tooltip.rs": {
-    "Process ID (PID): {}": "进程 ID(PID)"
+    "Process ID (PID): {}": "进程 ID(PID)：{}"
   },
   "zed/crates/terminal_view/src/terminal_view.rs": {
     "New Terminal": "新建终端",
@@ -5987,7 +5986,7 @@
     "redundant": ""
   },
   "zed/crates/worktree/src/worktree_settings.rs": {
-    "Failed to parse globs from {}": "解析"
+    "Failed to parse globs from {}": "无法解析 {} 中的通配符"
   },
   "zed/crates/zed/src/main.rs": {
     "Zed failed to launch": "Zed 启动失败",
