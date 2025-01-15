@@ -24,6 +24,7 @@ input_file_paths = [
     r'zed\crates\assistant\src\slash_command.rs',
     r'zed\crates\assistant\src\streaming_diff.rs',
     r'zed\crates\assistant\src\terminal_inline_assistant.rs',
+    r'zed\crates\assistant\src\slash_command\diagnostics_command.rs',
     r'zed\crates\assistant\src\slash_command\terminal_command.rs',
     # assistant_slash_command
     r'zed\crates\assistant_slash_command\src\assistant_slash_command.rs',
