@@ -14,6 +14,7 @@ global: # 全局规则，对所有文件生效
   - "rs"
   - "\n"
   - "\\n"
+  - "/"
 "zed/crates/activity_indicator/src/activity_indicator.rs":
   - " ({}%)"
   - "arrow-circle"
@@ -728,3 +729,13 @@ global: # 全局规则，对所有文件生效
   - "1 minute ago"
   - "2 hours ago"
   - "2 months ago"
+"zed/crates/worktree/src/worktree.rs":
+  - "my_sub_folder_1/project_root"
+  - "C:\\Users\\user\\Desktop\\project"
+  - "\\\\\\\\?\\\\C:\\\\Users\\\\user\\\\Desktop\\\\project\\\\main.rs"
+  - "id"
+  - "root_name"
+  - "entries_by_path"
+  - "entries_by_id"
+  - "~"
+  - "fs-event-sentinel"
