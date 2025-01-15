@@ -464,9 +464,9 @@
   },
   "zed/crates/assistant2/src/message_editor.rs": {
     "Ask anything…": "",
-    "Tools": "",
+    "Tools": "工具",
     "chat": "",
-    "Submit": ""
+    "Submit": "提交"
   },
   "zed/crates/assistant2/src/prompts.rs": {
     "Prompt template overrides directory found at {}": "",
