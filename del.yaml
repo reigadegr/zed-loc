@@ -15,6 +15,7 @@ global: # 全局规则，对所有文件生效
   - "\n"
   - "\\n"
   - "/"
+  - "Jupyter"
 "zed/crates/activity_indicator/src/activity_indicator.rs":
   - " ({}%)"
   - "arrow-circle"
