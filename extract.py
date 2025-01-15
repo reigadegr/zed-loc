@@ -305,6 +305,7 @@ input_file_paths = [
     # refineable
     r'zed\crates\refineable\derive_refineable\src\derive_refineable.rs',
     # repl
+    r'zed\crates\repl\src\components\kernel_options.rs',
     r'zed\crates\repl\src\kernels\native_kernel.rs',
     r'zed\crates\repl\src\kernels\remote_kernels.rs',
     r'zed\crates\repl\src\notebook\notebook_ui.rs',
