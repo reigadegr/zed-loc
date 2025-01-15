@@ -161,6 +161,16 @@ global: # 全局规则，对所有文件生效
   - " 1"
   - "        "
   - "OLD_TEXT_LEN"
+"zed/crates/assistant2/src/buffer_codegen.rs":
+  - "Lorem ipsum dolor"
+  - "```\nLorem ipsum dolor"
+  - "```\nLorem ipsum dolor\n```"
+  - "```html\n```js\nLorem ipsum dolor\n```\n```"
+  - "```js\nLorem ipsum dolor\n```"
+  - "``\nLorem ipsum dolor\n```"
+  - "Lorem<|CURSOR|> ipsum"
+  - "Lorem ipsum"
+  - "```\n<|CURSOR|>Lorem ipsum\n```"
 "zed/crates/assistant2/src/streaming_diff.rs":
   - "{:5}"
   - "aaaa\nbbbb"
