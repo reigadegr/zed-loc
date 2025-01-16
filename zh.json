@@ -119,9 +119,6 @@
     "error: {message}": "错误: {message}",
     "unexpected result on row {:?}": "行 {:?} 上的意外结果"
   },
-  "zed/crates/assistant/src/assistant_settings.rs": {
-    "attempted to set zed.dev model on outdated settings": "尝试在过时的设置上设置 zed.dev 模型"
-  },
   "zed/crates/assistant/src/context_store.rs": {
     "only the host contexts can be opened": "只有主机上下文可以被打开",
     "context not found": "上下文未找到",
@@ -316,13 +313,13 @@
   },
   "zed/crates/assistant/src/slash_command/diagnostics_command.rs": {
     "diagnostics": "",
-    "Insert diagnostics": "",
+    "Insert diagnostics": "插入诊断",
     "workspace was dropped": "",
     "No diagnostics found": "未找到诊断",
-    "diagnostics: {}": "",
-    "Diagnostics": "",
-    " {} errors": "",
-    " {} warnings": "",
+    "diagnostics: {}": "诊断：{}",
+    "Diagnostics": "诊断",
+    " {} errors": " {} 错误",
+    " {} warnings": " {} 警告",
     "warning": "",
     "error": ""
   },
@@ -331,7 +328,7 @@
     "Insert terminal output": "",
     "workspace was dropped": "",
     "no active terminal": "",
-    "Terminal output:\n": "",
+    "Terminal output:\n": "终端输出：\n",
     "Terminal": ""
   },
   "zed/crates/assistant_slash_command/src/assistant_slash_command.rs": {
@@ -469,18 +466,15 @@
     "Submit": "提交"
   },
   "zed/crates/assistant2/src/prompts.rs": {
-    "Prompt template overrides directory found at {}": "",
-    "No prompt template overrides directory found at {}. Using built-in prompts.": "",
-    "Symlink found pointing to {}, but target is invalid.": "",
-    "Prompt template overrides directory detected at {}": "",
-    "Registering prompt template override: {}": "",
-    "Prompt template overrides directory removed. Restoring built-in prompt templates.": "",
-    "Reloading prompt template override: {}": "",
-    "prompts": "",
-    "Registering built-in prompt template: {}": "",
-    "Plain Text": "",
-    "text": "",
-    "code": ""
+    "Prompt template overrides directory found at {}": "在 {} 处找到提示模板覆盖目录",
+    "No prompt template overrides directory found at {}. Using built-in prompts.": "在 {} 处未找到提示模板覆盖目录。使用内置提示。",
+    "Symlink found pointing to {}, but target is invalid.": "找到指向 {} 的符号链接，但目标无效。",
+    "Prompt template overrides directory detected at {}": "在 {} 处检测到提示模板覆盖目录",
+    "Registering prompt template override: {}": "注册提示模板覆盖：{}",
+    "Prompt template overrides directory removed. Restoring built-in prompt templates.": "提示模板覆盖目录已删除。恢复内置提示模板。",
+    "Reloading prompt template override: {}": "重新加载提示模板覆盖：{}",
+    "Registering built-in prompt template: {}": "注册内置提示模板：{}",
+    "Plain Text": "纯文本"
   },
   "zed/crates/assistant2/src/streaming_diff.rs": {
     "column out of bounds": "",
@@ -2982,6 +2976,17 @@
     "API key configured.": "API 密钥已配置",
     "Reset key": "重置密钥",
     "To reset your API key, unset the {GOOGLE_AI_API_KEY_VAR} environment variable.": "为了重置您的 API 密钥，请取消设置 {GOOGLE_AI_API_KEY_VAR} 环境变量。"
+  },
+  "zed/crates/language_models/src/provider/lmstudio.rs": {
+    "App state dropped": "应用状态已丢失",
+    "Run local LLMs like Llama, Phi, and Qwen.": "运行本地LLM，如Llama、Phi和Qwen。",
+    "To use LM Studio as a provider for Zed assistant, it needs to be running with at least one model downloaded.": "要将 LM Studio 用作 Zed 助手的提供者，它需要至少下载一个模型并运行。",
+    "Loading models...": "正在加载模型...",
+    "To get your first model, try running ": "要获取您的第一个模型，请尝试运行",
+    "Download LM Studio": "下载 LM Studio",
+    "Model Catalog": "模型目录",
+    "Connected": "已连接",
+    "Connect": "连接"
   },
   "zed/crates/language_models/src/provider/ollama.rs": {
     "App state dropped": "应用状态已删除",
