@@ -767,6 +767,14 @@ global: # 全局规则，对所有文件生效
   - "-c"
   - "ZED_FAKE_TEST_ENV"
   - "ZED_SHELL_START"
+"zed/crates/recent_projects/src/remote_servers.rs":
+  - "new-remote-project-container"
+  - "new-remote-project"
+  - "server-options-container"
+  - "server-options"
+  - "remote-project-{server_ix}"
+  - "remote-project-container-{element_id_base}"
+  - "remove-remote-project"
 "zed/crates/semantic_index/src/chunking.rs":
   - "lib.rs"
   - "Self {"
