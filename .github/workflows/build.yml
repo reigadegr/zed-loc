@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-windows:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -16,7 +16,7 @@ jobs:
           - backend: opengl
             artifact_name: zed-release-opengl
             rustflags: "--cfg gles"
-            
+
     steps:
       - name: Enable long paths in Git
         run: |
@@ -64,7 +64,7 @@ jobs:
           path: zed/target/release/zed.exe
 
   release:
-    needs: build
+    needs: build-windows
     runs-on: ubuntu-latest
     permissions:
       contents: write
