@@ -31,7 +31,7 @@ jobs:
         run: zed/script/clear-target-dir-if-larger-than 100
 
       - name: Create Linux .tar.gz bundle
-        run: zed/script/bundle-linux
+        run: cd zed && script/bundle-linux
 
       - name: 上传文件
         uses: actions/upload-artifact@v4
