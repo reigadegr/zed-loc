@@ -2,6 +2,7 @@ import re
 import json
 import os
 
+# 注：只能在 Windows 系统运行！
 # 定义文件路径列表
 input_file_paths = [
     # 文件读取规则，读代码时可跳过，如果词条缺失自行添加文件路径
@@ -13,7 +14,7 @@ input_file_paths = [
     r'zed\crates\assets\src\assets.rs',
     # assistant 助手
     r'zed\crates\assistant\src\assistant_panel.rs',
-    r'zed\crates\assistant\src\assistant_settings.rs',
+    #r'zed\crates\assistant\src\assistant_settings.rs',
     r'zed\crates\assistant\src\context_store.rs',
     r'zed\crates\assistant\src\context.rs',
     r'zed\crates\assistant\src\inline_assistant.rs',
@@ -34,7 +35,7 @@ input_file_paths = [
     r'zed\crates\assistant2\src\active_thread.rs',
     r'zed\crates\assistant2\src\assistant_model_selector.rs',
     r'zed\crates\assistant2\src\assistant_panel.rs',
-    r'zed\crates\assistant2\src\assistant_settings.rs',
+    #r'zed\crates\assistant2\src\assistant_settings.rs',
     r'zed\crates\assistant2\src\buffer_codegen.rs',
     r'zed\crates\assistant2\src\context_store.rs',
     r'zed\crates\assistant2\src\context_strip.rs',
