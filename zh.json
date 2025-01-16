@@ -160,7 +160,7 @@
   },
   "zed/crates/assistant/src/inline_assistant.rs": {
     "editor was dropped": "编辑器已被丢弃",
-    "Cancel Assist": "取消助手",
+    "Cancel Assist": "关闭",
     "start": "",
     "Transform": "转换",
     "stop": "",
@@ -202,7 +202,6 @@
     "invalid range": "无效范围",
     "assistant panel was released": "助手面板已被释放",
     "Fix Diagnostics": "修复诊断",
-    "Lorem ipsum dolor": "",
     "failed to strip invalid spans, chunk size: {}": "无法去除无效跨度，块大小：{}"
   },
   "zed/crates/assistant/src/patch.rs": {
@@ -233,7 +232,6 @@
     "Delete": "删除",
     "Cancel": "取消",
     " copy": "",
-    "{title_to_duplicate}{DUPLICATE_SUFFIX} {i}": "",
     "New Prompt": "新建提示词",
     "{} tokens": "{} 令牌",
     "Model: {}": "模型: {}",
@@ -256,7 +254,7 @@
     "Prompt template overrides directory removed. Restoring built-in prompt templates.": "提示词模板覆盖目录已移除。恢复内置提示词模板。",
     "Reloading prompt template override: {}": "重载提示词模板覆盖: {}",
     "Registering built-in prompt template: {}": "注册内置提示词模板: {}",
-    "Plain Text": ""
+    "Plain Text": "纯文本"
   },
   "zed/crates/assistant/src/slash_command_picker.rs": {
     "Select a command...": "选择一个命令...",
@@ -288,7 +286,7 @@
     "invalid assist": "无效助手",
     "Terminal inline assistant error: {}": "终端内联助手错误: {}",
     "cancel": "",
-    "Cancel Assist": "取消助手",
+    "Cancel Assist": "关闭",
     "start": "",
     "Generate": "生成",
     "stop": "",
@@ -379,12 +377,6 @@
     "Max Monthly Spend Reached": "最大月度支出已达到",
     "Update Monthly Spend Limit": "提高月度支出限额",
     "Error interacting with language model": "语言模型交互错误"
-  },
-  "zed/crates/assistant2/src/assistant_settings.rs": {
-    "name": "",
-    "attempted to set zed.dev model on outdated settings": "",
-    "version": "",
-    "assistant": ""
   },
   "zed/crates/assistant2/src/buffer_codegen.rs": {
     "no active model": "无活动模型",
@@ -4208,6 +4200,12 @@
     "Option": "",
     "Expected struct type for a refineable field": ""
   },
+  "zed/crates/repl/src/components/kernel_options.rs": {
+    "Select a kernel...": "选择内核...",
+    "Python Env": "Python 环境",
+    "Remote": "远程",
+    "Kernel Docs": "内核文档"
+  },
   "zed/crates/repl/src/kernels/native_kernel.rs": {
     "Empty argv in kernelspec {}": "",
     "Invalid argv in kernelspec {}": "",
@@ -5475,6 +5473,11 @@
     "4 weeks ago": "4 周前",
     "Valid timezone offset": "有效时区偏移"
   },
+  "zed/crates/title_bar/src/application_menu.rs": {
+    "Open Application Menu": "打开程序目录",
+    "Left": "",
+    "Right": ""
+  },
   "zed/crates/title_bar/src/collab.rs": {
     "Screen Share Disabled": "禁用屏幕共享",
     "Screen Share Enabled": "启用屏幕共享",
@@ -5549,7 +5552,7 @@
   },
   "zed/crates/util/src/paths.rs": {
     "failed to determine home directory": "",
-    "Invalid WTF-8 sequence: {bytes:?}": "无效的 WTF-8 序列：{bytes:?}",
+    "Invalid WTF-8 sequence: {bytes:?}": "无效 WTF-8 序列：{bytes:?}",
     "sanitized": "",
     "Path matcher should match {path:?}": ""
   },
@@ -5802,7 +5805,6 @@
     "Wrapping Text": "",
     "This is a longer piece of text that should wrap to multiple lines. It demonstrates how text behaves when it exceeds the width of its container.": "",
     "Colors": "",
-    "{:?}-preview": "",
     "Theme Preview": "",
     "This view lets you preview a range of UI elements across a theme. Use it for testing out changes to the theme.": "",
     "Headline 1": "",
