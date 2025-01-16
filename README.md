@@ -28,7 +28,7 @@ cd zed-loc
 
 > [!note]
 >
-> 注意：提取、替换词条只能在 Windows 系统上运行，在 Linux，Macos 上会报错。
+> 注意：提取词条只能在 Windows 系统上运行，在 Linux，Macos 上会报错。
 
 首先你需要自行同步 Zed 源码到本地：
 
