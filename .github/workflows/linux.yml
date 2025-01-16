@@ -1,0 +1,39 @@
+name: Linux 编译
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 设置 Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: 手动同步 zed 源代码
+        uses: actions/checkout@v4
+        with:
+          repository: zed-industries/zed
+          ref: main
+          path: zed
+      - name: 替换
+        run: python3 replace.py
+
+      - name: Add Rust to the PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install Linux dependencies
+        run: ./zed/script/linux && ./zed/script/install-mold 2.34.0
+
+      - name: Limit target directory size
+        run: zed/script/clear-target-dir-if-larger-than 100
+
+      - name: Create Linux .tar.gz bundle
+        run: zed/script/bundle-linux
+
+      - name: 上传文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: zed-linux-x86_64
+          path: zed/target
