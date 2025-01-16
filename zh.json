@@ -2754,12 +2754,32 @@
     "local task polled by a thread that didn't spawn it. Task spawned at {}": ""
   },
   "zed/crates/gpui/src/key_dispatch.rs": {
-    "Editor": "",
+    "Editor": "编辑器",
     "Pane": "",
     "node {} was not part of the reused subtree {:?}": "",
     "Workspace": ""
   },
-  "zed/crates/gpui/src/keymap.rs": {},
+  "zed/crates/gpui/src/platform/windows/platform.rs": {
+    "unable to initialize Windows OLE": "无法初始化 Windows OLE",
+    "Error creating bitmap factory.": "创建位图工厂时出错",
+    "Error creating DirectWriteTextSystem": "创建直接写入文本系统时出错",
+    "Unable to init GPU context": "无法初始化 GPU 上下文",
+    "Error retrieve windows version": "获取 Windows 版本时出错",
+    "Something went wrong while waiting {:?}": "等待时出现问题 {:?}",
+    "failed to spawn restart script: {:?}": "无法生成重启脚本: {:?}",
+    "screen capture not implemented": "屏幕捕获未实现",
+    "only files": "仅限文件",
+    "only folders": "仅限文件夹",
+    "unable to parse file path": "无法解析文件路径",
+    "unable to parse file full path: {}": "无法解析文件完整路径: {}",
+    "not yet implemented": "尚未实现",
+    "register_url_scheme unimplemented": "register_url_scheme 未实现",
+    "Unable to open target: {}": "无法打开目标: {}",
+    "Unable to open target in explorer: {}": "无法在资源管理器中打开目标: {}",
+    "All files": "所有文件",
+    "unable to get module handle": "无法获取模块句柄",
+    "unable to load icon file": "无法加载图标文件"
+  },
   "zed/crates/html_to_markdown/src/html_to_markdown.rs": {
     "failed to parse HTML": "",
     "failed to convert HTML to Markdown": "",

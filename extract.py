@@ -226,7 +226,8 @@ input_file_paths = [
     r'zed\crates\gpui\src\element.rs',
     r'zed\crates\gpui\src\executor.rs',
     r'zed\crates\gpui\src\key_dispatch.rs',
-    r'zed\crates\gpui\src\keymap.rs',
+    #r'zed\crates\gpui\src\keymap.rs',
+    r'zed\crates\gpui\src\platform\linux\platform.rs',
     r'zed\crates\gpui\src\platform\windows\platform.rs',
     # html_to_markdown
     r'zed\crates\html_to_markdown\src\html_to_markdown.rs',

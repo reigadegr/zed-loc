@@ -741,6 +741,17 @@ global: # 全局规则，对所有文件生效
   - "\n\n\n\n\n4444\n5555\n6666\n\n\n"
   - "\n\n\n1111\n2222\n3333\n\n\n\n\n4444\n5555\n6666\n\n\n"
   - "\n\n\n{sample_text}\n"
+"zed/crates/gpui/src/platform/windows/platform.rs":
+  - "unknown"
+  - "powershell.exe"
+  - "-command"
+  - "open"
+  - "explorer.exe"
+  - "/select,{}"
+  - "*.*"
+  - "你好"
+  - "12345"
+  - "abcdef"
 "zed/crates/language_models/src/provider/cloud.rs":
   - "terms_of_service"
   - "ZED_CLOUD_PROVIDER_ADDITIONAL_MODELS_JSON"
