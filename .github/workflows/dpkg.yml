@@ -37,7 +37,7 @@ jobs:
         run: cd zed && script/bundle-linux
 
       - name: 移动文件
-        run: mv zed/target/replace/zed-*-linux-x86_64.tar.gz zed-linux-x86_64.tar.gz
+        run: mv zed/target/release/zed-*-linux-x86_64.tar.gz zed-linux-x86_64.tar.gz
 
       - name: 解压文件
         run: tar -xvf zed-linux-x86_64.tar.gz
