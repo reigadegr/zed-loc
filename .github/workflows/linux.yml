@@ -21,20 +21,24 @@ jobs:
       - name: 替换
         run: python3 replace.py
 
-      - name: Add Rust to the PATH
+      - name: 将 Rust 添加到 PATH
         run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
-      - name: Install Linux dependencies
+      - name: 安装 Linux 依赖项
         run: ./zed/script/linux && ./zed/script/install-mold 2.34.0
 
-      - name: Limit target directory size
+      - name: 限制目标目录大小
         run: zed/script/clear-target-dir-if-larger-than 100
 
-      - name: Create Linux .tar.gz bundle
+      - name: 创建 Linux .tar.gz 包
         run: cd zed && script/bundle-linux
+
+      - name: 找到匹配文件
+        id: find_files
+        run: echo "matches=$(find zed/target -name 'zed-*-linux-x86_64.tar.gz')" >> $GITHUB_ENV
 
       - name: 上传文件
         uses: actions/upload-artifact@v4
         with:
           name: zed-linux-x86_64
-          path: zed/target
+          path: ${{ env.matches }}
