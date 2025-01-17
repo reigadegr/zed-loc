@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        backend: [vulkan, opengl]
+        backend: [vulkan]
         include:
           - backend: vulkan
             artifact_name: zed-release
