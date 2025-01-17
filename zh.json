@@ -5329,7 +5329,7 @@
     "client": "",
     "Using GPU: {:?}": "使用显卡：{:?}",
     "Could not start inotify": "无法启动 inotify",
-    "Troubleshoot and Quit": "",
+    "Troubleshoot and Quit": "排除故障并退出",
     "Could not start ReadDirectoryChangesW": "",
     "Unsupported GPU": "不支持的显卡",
     "Skip": "跳过",
