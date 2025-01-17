@@ -3,6 +3,9 @@ name: Linux 编译
 on:
   workflow_dispatch:
 
+env:
+  CARGO_TERM_COLOR: always
+
 jobs:
   build-linux:
     runs-on: ubuntu-latest
