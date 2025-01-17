@@ -1,8 +1,10 @@
 import json
 import re
+import os
 
 # 定义文件路径，自行修改词条文件名
 json_file_path = 'zh.json'
+missing_files = []
 
 # 读取JSON文件内容
 with open(json_file_path, 'r', encoding='utf-8') as json_file:
@@ -10,6 +12,10 @@ with open(json_file_path, 'r', encoding='utf-8') as json_file:
 
 # 遍历JSON数据
 for file_path, replacements in json_data.items():
+    if not os.path.exists(file_path):
+        missing_files.append(file_path)
+        continue
+
     # 读取原始文件内容
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
@@ -24,3 +30,8 @@ for file_path, replacements in json_data.items():
         file.write(content)
 
 print('Successfully replaced strings in the original files')
+
+if missing_files:
+    print('The following files were not found:')
+    for missing_file in missing_files:
+        print(missing_file)
