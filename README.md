@@ -1,5 +1,5 @@
 <!---![zed](https://avatars.githubusercontent.com/u/79345384?s=200&v=4)--->
-# 🌏 zed-loc (Zed 本地化)
+# 🌏 zed-loc (Zed 汉化)
 
 简体中文|[English](README.en.md)
 
