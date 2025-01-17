@@ -3,6 +3,9 @@ name: 替换并编译
 on:
   workflow_dispatch:
 
+env:
+  CARGO_TERM_COLOR: always
+
 jobs:
   build-windows:
     runs-on: windows-latest
