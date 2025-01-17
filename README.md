@@ -24,7 +24,7 @@
 git clone https://github.com/tc999/zed-loc.git
 cd zed-loc
 ```
-### 提取词条 && 替换
+### 提取词条
 
 > [!note]
 >
@@ -45,10 +45,13 @@ python3 extract.py
 python3 delete.py
 ```
 
+### 翻译词条
 > [!caution]
 >
 > 警告：提取脚本规则是将引号内所有内容全部提取，翻译时请对照 Zed 源码翻译，同时留意不需要翻译的内容。
 > 如有不需要翻译的词条请直接删除
+
+翻译方法：丢给 GPT 机翻，再进行人工修正
 
 然后将`strings.json`文件另存为，以目标语言代码为文件名，词条翻译完成后，执行以下命令替换词条：
 ```bash
