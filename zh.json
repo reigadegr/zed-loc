@@ -245,17 +245,6 @@
     "prompt not found": "未找到提示词",
     "built-in prompts cannot be saved": "内置提示词无法保存"
   },
-  "zed/crates/assistant/src/prompts.rs": {
-    "Prompt template overrides directory found at {}": "提示词模板覆盖目录位于 {}",
-    "No prompt template overrides directory found at {}. Using built-in prompts.": "无提示词模板覆盖目录位于 {}. 使用内置提示词。",
-    "Symlink found pointing to {}, but target is invalid.": "找到指向 {} 的符号链接，但目标无效。",
-    "Prompt template overrides directory detected at {}": "提示词模板覆盖目录检测到于 {}",
-    "Registering prompt template override: {}": "注册提示词模板覆盖: {}",
-    "Prompt template overrides directory removed. Restoring built-in prompt templates.": "提示词模板覆盖目录已移除。恢复内置提示词模板。",
-    "Reloading prompt template override: {}": "重载提示词模板覆盖: {}",
-    "Registering built-in prompt template: {}": "注册内置提示词模板: {}",
-    "Plain Text": "纯文本"
-  },
   "zed/crates/assistant/src/slash_command_picker.rs": {
     "Select a command...": "选择一个命令...",
     "index cannot be zero, as we can never have a separator at 0th position": "索引不能为零，因为我们永远不会在第 0 位置有一个分隔符",
@@ -264,23 +253,6 @@
   "zed/crates/assistant/src/slash_command.rs": {
     "we have the last element": "我们有最后一个元素",
     "comment": ""
-  },
-  "zed/crates/assistant/src/streaming_diff.rs": {
-    "column out of bounds": "",
-    "row out of bounds": "",
-    "invalid `OLD_TEXT_LEN` variable": "",
-    "old text: {:?}": "旧文本: {:?}",
-    "new text: {:?}": "新文本: {:?}",
-    "char operations: {:?}": "字符操作：{:?}",
-    "line operations: {:?}": "行操作: {:?}",
-    "ITERATIONS": "",
-    "invalid `ITERATIONS` variable": "",
-    "SEED": "",
-    "invalid `SEED` variable": "",
-    "Running test with {} iterations and seed {}": "",
-    "Iteration {}": "",
-    "Hello, world!": "",
-    "Hello, Rust!": ""
   },
   "zed/crates/assistant/src/terminal_inline_assistant.rs": {
     "invalid assist": "无效助手",
@@ -308,26 +280,6 @@
     "Generate…{context_keybinding} • ↓↑ for history": "生成…{context_keybinding} • ↓↑ 查看历史",
     "Tokens Used by Inline Assistant": "令牌使用情况",
     "Click to Open Assistant Panel": "点击打开助手面板"
-  },
-  "zed/crates/assistant/src/slash_command/diagnostics_command.rs": {
-    "diagnostics": "",
-    "Insert diagnostics": "插入诊断",
-    "workspace was dropped": "",
-    "No diagnostics found": "未找到诊断",
-    "diagnostics: {}": "诊断：{}",
-    "Diagnostics": "诊断",
-    " {} errors": " {} 错误",
-    " {} warnings": " {} 警告",
-    "warning": "",
-    "error": ""
-  },
-  "zed/crates/assistant/src/slash_command/terminal_command.rs": {
-    "terminal": "",
-    "Insert terminal output": "",
-    "workspace was dropped": "",
-    "no active terminal": "",
-    "Terminal output:\n": "终端输出：\n",
-    "Terminal": ""
   },
   "zed/crates/assistant_slash_command/src/assistant_slash_command.rs": {
     "Hello, world!": "",
@@ -456,34 +408,6 @@
     "Tools": "工具",
     "chat": "",
     "Submit": "提交"
-  },
-  "zed/crates/assistant2/src/prompts.rs": {
-    "Prompt template overrides directory found at {}": "在 {} 处找到提示模板覆盖目录",
-    "No prompt template overrides directory found at {}. Using built-in prompts.": "在 {} 处未找到提示模板覆盖目录。使用内置提示。",
-    "Symlink found pointing to {}, but target is invalid.": "找到指向 {} 的符号链接，但目标无效。",
-    "Prompt template overrides directory detected at {}": "在 {} 处检测到提示模板覆盖目录",
-    "Registering prompt template override: {}": "注册提示模板覆盖：{}",
-    "Prompt template overrides directory removed. Restoring built-in prompt templates.": "提示模板覆盖目录已删除。恢复内置提示模板。",
-    "Reloading prompt template override: {}": "重新加载提示模板覆盖：{}",
-    "Registering built-in prompt template: {}": "注册内置提示模板：{}",
-    "Plain Text": "纯文本"
-  },
-  "zed/crates/assistant2/src/streaming_diff.rs": {
-    "column out of bounds": "",
-    "row out of bounds": "",
-    "invalid `OLD_TEXT_LEN` variable": "",
-    "old text: {:?}": "旧文本: {:?}",
-    "new text: {:?}": "新文本：{:?}",
-    "char operations: {:?}": "字符操作：{:?}",
-    "line operations: {:?}": "行操作：{:?}",
-    "ITERATIONS": "",
-    "invalid `ITERATIONS` variable": "",
-    "SEED": "",
-    "invalid `SEED` variable": "",
-    "Running test with {} iterations and seed {}": "",
-    "Iteration {}": "",
-    "Hello, world!": "",
-    "Hello, Rust!": ""
   },
   "zed/crates/assistant2/src/terminal_inline_assistant.rs": {
     "invalid assist": "无效助手",

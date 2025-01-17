@@ -20,22 +20,19 @@ input_file_paths = [
     r'zed\crates\assistant\src\inline_assistant.rs',
     r'zed\crates\assistant\src\patch.rs',
     r'zed\crates\assistant\src\prompt_library.rs',
-    r'zed\crates\assistant\src\prompts.rs',
     r'zed\crates\assistant\src\slash_command_picker.rs',
     r'zed\crates\assistant\src\slash_command.rs',
-    r'zed\crates\assistant\src\streaming_diff.rs',
     r'zed\crates\assistant\src\terminal_inline_assistant.rs',
-    r'zed\crates\assistant\src\slash_command\diagnostics_command.rs',
-    r'zed\crates\assistant\src\slash_command\terminal_command.rs',
-    # assistant_slash_command
+    # assistant_slash_command(s)
     r'zed\crates\assistant_slash_command\src\assistant_slash_command.rs',
+    r'zed\crates\assistant_slash_commands\src\diagnostics_command.rs',
+    r'zed\crates\assistant_slash_commands\src\terminal_command.rs',
     # assistant_tools
     r'zed\crates\assistant_tools\src\now_tool.rs',
     # assistant2
     r'zed\crates\assistant2\src\active_thread.rs',
     r'zed\crates\assistant2\src\assistant_model_selector.rs',
     r'zed\crates\assistant2\src\assistant_panel.rs',
-    #r'zed\crates\assistant2\src\assistant_settings.rs',
     r'zed\crates\assistant2\src\buffer_codegen.rs',
     r'zed\crates\assistant2\src\context_store.rs',
     r'zed\crates\assistant2\src\context_strip.rs',
@@ -43,8 +40,6 @@ input_file_paths = [
     r'zed\crates\assistant2\src\inline_assistant.rs',
     r'zed\crates\assistant2\src\inline_prompt_editor.rs',
     r'zed\crates\assistant2\src\message_editor.rs',
-    r'zed\crates\assistant2\src\prompts.rs',
-    r'zed\crates\assistant2\src\streaming_diff.rs',
     r'zed\crates\assistant2\src\terminal_inline_assistant.rs',
     r'zed\crates\assistant2\src\thread_history.rs',
     r'zed\crates\assistant2\src\thread_store.rs',
@@ -301,6 +296,8 @@ input_file_paths = [
     r'zed\crates\project\src\worktree_store.rs',
     # project_panel
     r'zed\crates\project_panel\src\project_panel.rs',
+    # prompt_library
+    r'zed\crates\prompt_library\src\prompts.rs',
     # recent_projects
     r'zed\crates\recent_projects\src\disconnected_overlay.rs',
     r'zed\crates\recent_projects\src\recent_projects.rs',
@@ -364,6 +361,8 @@ input_file_paths = [
     r'zed\crates\sqlez\src\statement.rs',
     r'zed\crates\sqlez\src\thread_safe_connection.rs',
     r'zed\crates\sqlez\src\typed_statements.rs',
+    # streaming_diff
+    r'zed\crates\streaming_diff\src\streaming_diff.rs',
     # tab_switcher
     r'zed\crates\tab_switcher\src\tab_switcher.rs',
     # task
@@ -441,6 +440,10 @@ json_data = {}
 # 遍历每个文件路径
 for input_file_path in input_file_paths:
     # 读取文件内容
+    if not os.path.exists(input_file_path):
+        print(f"File not found: {input_file_path}, skipping.")
+        continue
+
     with open(input_file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
