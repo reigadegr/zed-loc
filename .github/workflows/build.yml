@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       release:
+        description: "是否发行"
         type: boolean
+      branch:
+        type: string
+        default: main
+        description: "分支名"
 
 env:
   CARGO_TERM_COLOR: always
@@ -39,7 +44,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zed-industries/zed
-          ref: v0.170.0-pre
+          ref: ${{ inputs.branch }}
           path: zed
       - name: 替换
         run: python3 replace.py
