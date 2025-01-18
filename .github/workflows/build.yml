@@ -2,6 +2,9 @@ name: 替换并编译
 
 on:
   workflow_dispatch:
+    inputs:
+      release:
+        type: bool
 
 env:
   CARGO_TERM_COLOR: always
@@ -36,7 +39,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zed-industries/zed
-          ref: main
+          ref: v0.170.0-pre
           path: zed
       - name: 替换
         run: python3 replace.py
@@ -64,6 +67,7 @@ jobs:
           path: zed/target/release/zed.exe
 
   release:
+    if: ${{ inputs.release }}
     needs: build-windows
     runs-on: ubuntu-latest
     permissions:
