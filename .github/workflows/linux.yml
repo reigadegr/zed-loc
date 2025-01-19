@@ -73,7 +73,7 @@ jobs:
         run: cd zed && script/bundle-linux
 
       - name: 移动
-        run: mv zed/target/release/zed-*-linux-arm64.tar.gz zed-linux-arm64.tar.gz
+        run: mv zed/target/release/zed-*.tar.gz zed-linux-arm64.tar.gz
 
       - name: 上传文件
         uses: actions/upload-artifact@v4
