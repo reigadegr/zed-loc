@@ -75,6 +75,17 @@ cargo run
 - [Nriver/zed-translation](https://github.com/Nriver/zed-translation) - 提供思路
 - [GitHub Copilot](https://github.com/copilot) - 脚本编写
 
+## 感谢所有贡献者
+
+一如既往，感谢我们出色的贡献者❤️！
+
+<a href="https://github.com/TC999" title="陈生杂物房">
+  <img src="https://avatars.githubusercontent.com/u/88823709?v=4" width="42;" alt="陈生杂物房"/>
+</a>
+<a href="https://github.com/shenjackyuanjie" title="shenjack">
+  <img src="https://avatars.githubusercontent.com/u/54507071?v=4" width="42;" alt="shenjack"/>
+</a>
+
 # 许可证
 
 本项目基于 [MIT 许可证](LICENSE)发布，允许任何组织和个人免费使用。
