@@ -257,9 +257,7 @@
   "zed/crates/assistant/src/terminal_inline_assistant.rs": {
     "invalid assist": "无效助手",
     "Terminal inline assistant error: {}": "终端内联助手错误: {}",
-    "cancel": "",
     "Cancel Assist": "关闭",
-    "start": "",
     "Generate": "生成",
     "stop": "",
     "Interrupt Generation": "",
@@ -351,7 +349,7 @@
     "delete": "",
     "invalid transformation range": "无效转换范围",
     "Failed to generate content prompt: {}": "生成内容提示失败: {}",
-    "failed to strip invalid spans, chunk size: {}": ""
+    "failed to strip invalid spans, chunk size: {}": "未能去除无效的跨度，块大小：{}"
   },
   "zed/crates/assistant2/src/context_store.rs": {
     "failed to read project": "读取项目失败",

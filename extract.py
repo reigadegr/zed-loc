@@ -297,6 +297,8 @@ input_file_paths = [
     # project_panel
     r'zed\crates\project_panel\src\project_panel.rs',
     # prompt_library
+    r'zed\crates\prompt_library\src\prompt_library.rs',
+    r'zed\crates\prompt_library\src\prompt_store.rs',
     r'zed\crates\prompt_library\src\prompts.rs',
     # recent_projects
     r'zed\crates\recent_projects\src\disconnected_overlay.rs',
