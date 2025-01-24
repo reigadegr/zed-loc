@@ -51,7 +51,7 @@ jobs:
       - name: Install rust nightly
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: stable
+          toolchain: nightly
           override: true
           target: wasm32-wasip1
 
