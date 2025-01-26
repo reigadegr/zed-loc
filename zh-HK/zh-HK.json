@@ -52,10 +52,8 @@
         "Configuration": ""
     },
     "zed/crates/assistant/src/assistant_panel.rs": {
-        "history": "",
         "Open History": "",
         "New Chat": "",
-        "menu": "",
         "Toggle Assistant Menu": "",
         "Zoom Out": "",
         "Zoom In": "",
@@ -66,7 +64,6 @@
         "No language model provider configured": "",
         "Cancel": "",
         "assistant panel": "",
-        "AssistantPanel": "",
         "Assistant Panel": "",
         "no Assistant panel found": ""
     },
@@ -138,7 +135,6 @@
     },
     "zed/crates/assistant_context_editor/src/context_editor.rs": {
         "New Chat": "",
-        "tool-use": "",
         "Tool Result: {tool_use_id}": "",
         "Press": "",
         "to cancel": "",
