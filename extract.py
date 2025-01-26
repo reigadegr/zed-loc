@@ -23,6 +23,7 @@ input_file_paths = [
     r'zed\crates\assistant\src\slash_command_picker.rs',
     r'zed\crates\assistant\src\slash_command.rs',
     r'zed\crates\assistant\src\terminal_inline_assistant.rs',
+    r'zed\crates\assistant_context_editor\src\context_editor.rs',
     # assistant_slash_command(s)
     r'zed\crates\assistant_slash_command\src\assistant_slash_command.rs',
     r'zed\crates\assistant_slash_commands\src\diagnostics_command.rs',
