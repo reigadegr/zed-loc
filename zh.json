@@ -2603,17 +2603,17 @@
     "Item {item}": ""
   },
   "zed/crates/gpui/examples/window_positioning.rs": {
-    "origin: {}, {} size: {}, {}": "",
-    "cx.bounds() origin: {}, {} size {}, {}": "",
-    "Top Left {:?}": "",
-    "Top Right {:?}": "",
-    "Bottom Left {:?}": "",
-    "Bottom Right {:?}": "",
+    "origin: {}, {} size: {}, {}": "源：{}，{} 大小：{}，{}",
+    "cx.bounds() origin: {}, {} size {}, {}": "cx.bounds() 源：{}，{} 大小 {}，{}",
+    "Top Left {:?}": "顶部左侧 {:?}",
+    "Top Right {:?}": "顶部右侧 {:?}",
+    "Bottom Left {:?}": "底部左侧 {:?}",
+    "Bottom Right {:?}": "底部右侧 {:?}",
     "Top Center {:?}": "顶部中心 {:?}",
-    "Left Center {:?}": "左中 {:?}",
+    "Left Center {:?}": "左侧中心 {:?}",
     "Center {:?}": "中心 {:?}",
-    "Right Center {:?}": "",
-    "Bottom Center {:?}": ""
+    "Right Center {:?}": "右侧中心 {:?}",
+    "Bottom Center {:?}": "底部中心 {:?}"
   },
   "zed/crates/gpui/src/elements/animation.rs": {
     "delta should always be between 0 and 1": "",
