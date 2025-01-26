@@ -66,7 +66,7 @@ jobs:
           name: zed-linux-x86_64.deb
           path: zed-linux-x86_64.deb
 
-  bundle-dpkg-arm:
+  build-dpkg-arm:
     runs-on: ubuntu-22.04-arm
 
     steps:

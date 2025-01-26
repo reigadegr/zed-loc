@@ -59,13 +59,13 @@ jobs:
           override: true
           target: wasm32-wasip1
 
-      - name: Rust Cache
+      - name: Rust 缓存
         uses: Swatinem/rust-cache@v2.7.3
         with:
           key: ${{ matrix.backend }}
           workspaces: "zed -> target"
 
-      - name: Setup rustflags
+      - name: 设置 Rust 标记
         run: pwsh ./Parse-Rustflags.ps1 ${{ matrix.rustflags }}
 
       - name: 编译发行版
@@ -78,9 +78,122 @@ jobs:
           name: ${{ matrix.artifact_name }}
           path: zed/target/release/zed.exe
 
+  build-dpkg-x86:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: 设置 Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - uses: actions/checkout@v4
+      - name: 手动同步 zed 源代码
+        uses: actions/checkout@v4
+        with:
+          repository: zed-industries/zed
+          ref: main
+          path: zed
+      - name: 替换
+        run: python3 replace.py
+
+      - name: 将 Rust 添加到 PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: 安装 Linux 依赖项
+        run: ./zed/script/linux && ./zed/script/install-mold 2.34.0
+
+      - name: 限制目标目录大小
+        run: zed/script/clear-target-dir-if-larger-than 100
+
+      - name: 创建 Linux .tar.gz 包
+        run: cd zed && script/bundle-linux
+
+      - name: 移动文件
+        run: mv zed/target/release/zed-*-linux-x86_64.tar.gz zed-linux-x86_64.tar.gz
+
+      - name: 解压文件
+        run: tar -xvf zed-linux-x86_64.tar.gz
+
+      - name: 上传文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: zed-linux-x86_64
+          path: zed-linux-x86_64.tar.gz
+
+      - name: 移动
+        run: mv zed-dev.app deb/usr
+
+      - name: 权限修复
+        run: chmod 775 deb -R
+
+      - name: 编译
+        run: dpkg-deb --build deb
+
+      - name: 改名
+        run: mv deb.deb zed-linux-x86_64.deb
+
+      - name: 上传文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: zed-linux-x86_64.deb
+          path: zed-linux-x86_64.deb
+
+  build-dpkg-arm:
+    runs-on: ubuntu-22.04-arm
+
+    steps:
+      - name: 设置 Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - uses: actions/checkout@v4
+      - name: 手动同步 zed 源代码
+        uses: actions/checkout@v4
+        with:
+          repository: zed-industries/zed
+          ref: main
+          path: zed
+      - name: 替换
+        run: python3 replace.py
+
+      - name: 安装 Linux 依赖项
+        run: ./zed/script/linux
+
+      - name: 限制目标目录大小
+        run: zed/script/clear-target-dir-if-larger-than 100
+
+      - name: 创建 Linux .tar.gz 包
+        run: cd zed && script/bundle-linux
+
+      - name: 移动
+        run: mv zed/target/release/zed-*.tar.gz zed-linux-arm64.tar.gz
+
+      - name: 上传文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: zed-linux-arm64
+          path: zed-linux-arm64.tar.gz
+
+      - name: 移动
+        run: mv zed-dev.app deb-arm/usr
+
+      - name: 权限修复
+        run: chmod 775 deb-arm -R
+
+      - name: 编译
+        run: dpkg-deb --build deb-arm
+
+      - name: 改名
+        run: mv deb-arm.deb zed-linux-arm64.deb
+
+      - name: 上传文件
+        uses: actions/upload-artifact@v4
+        with:
+          name: zed-linux-arm64.deb
+          path: zed-linux-arm64.deb
+
   release:
     if: ${{ inputs.release }}
-    needs: build-windows
+    needs: [build-windows, build-dpkg-x86, build-dpkg-arm]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -101,6 +214,11 @@ jobs:
           mv artifacts/zed-release/zed.exe zed-release/
           zip -r zed-windows.zip zed-release/*
 
+      - name: debian
+        run: |
+          mv artifacts/zed-linux-x86_64.deb/zed-linux-x86_64.deb zed-linux-x86_64.deb
+          mv artifacts/zed-linux-arm64.deb/zed-linux-arm64.deb zed-linux-arm64.deb
+
       - name: Upload release build artifacts to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
@@ -110,3 +228,5 @@ jobs:
           make_latest: true
           files: |
             zed-windows.zip
+            zed-linux-x86_64.deb
+            zed-linux-arm64.deb
