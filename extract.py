@@ -13,6 +13,7 @@ input_file_paths = [
     # r'zed\crates\anthropic\src\supported_countries.rs',
     r'zed\crates\assets\src\assets.rs',
     # assistant 助手
+    r'zed\crates\assistant\src\assistant_configuration.rs',
     r'zed\crates\assistant\src\assistant_panel.rs',
     #r'zed\crates\assistant\src\assistant_settings.rs',
     r'zed\crates\assistant\src\context_store.rs',
