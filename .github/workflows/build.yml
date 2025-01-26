@@ -1,4 +1,4 @@
-name: 替换并编译
+name: 汉化发行
 
 on:
   workflow_dispatch:
@@ -35,7 +35,9 @@ jobs:
         run: |
           New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
             -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+
       - uses: actions/checkout@v4
+
       - name: 设置 Python 3.10
         uses: actions/setup-python@v3
         with:
@@ -46,8 +48,10 @@ jobs:
           repository: zed-industries/zed
           ref: ${{ inputs.branch }}
           path: zed
+
       - name: 替换
         run: python3 replace.py
+
       - name: Install rust nightly
         uses: dtolnay/rust-toolchain@stable
         with:
@@ -64,9 +68,8 @@ jobs:
       - name: Setup rustflags
         run: pwsh ./Parse-Rustflags.ps1 ${{ matrix.rustflags }}
 
-      - name: Build release
-        env:
-          RUSTFLAGS: ${{ matrix.rustflags }}
+      - name: 编译发行版
+        working-directory: zed
         run: cargo build --release
 
       - name: Archive build
