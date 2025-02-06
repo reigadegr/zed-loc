@@ -252,6 +252,7 @@ input_file_paths = [
     r'zed\crates\language_models\src\provider\anthropic.rs',
     r'zed\crates\language_models\src\provider\cloud.rs',
     r'zed\crates\language_models\src\provider\copilot_chat.rs',
+    r'zed\crates\language_models\src\provider\deepseek.rs',
     r'zed\crates\language_models\src\provider\google.rs',
     r'zed\crates\language_models\src\provider\lmstudio.rs',
     r'zed\crates\language_models\src\provider\ollama.rs',
