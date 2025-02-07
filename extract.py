@@ -387,15 +387,17 @@ input_file_paths = [
     # theme_importer
     r'zed\crates\theme_importer\src\assets.rs',
     r'zed\crates\theme_importer\src\main.rs',
+    # theme_selector 主题选择器
     r'zed\crates\theme_selector\src\theme_selector.rs',
+    r'zed\crates\theme_selector\src\icon_theme_selector.rs',
     # time_format 时间格式
     r'zed\crates\time_format\src\time_format.rs',
-    # title_bar
+    # title_bar 标题栏
     r'zed\crates\title_bar\src\application_menu.rs',
     r'zed\crates\title_bar\src\collab.rs',
     r'zed\crates\title_bar\src\title_bar.rs',
     r'zed\crates\title_bar\src\window_controls.rs',
-    # toolchain_selector
+    # toolchain_selector 工具链选择器
     r'zed\crates\toolchain_selector\src\active_toolchain.rs',
     r'zed\crates\toolchain_selector\src\toolchain_selector.rs',
     # util
