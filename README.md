@@ -1,6 +1,14 @@
 <!---![zed](https://avatars.githubusercontent.com/u/79345384?s=200&v=4)--->
 # 🌏 zed-loc (Zed 汉化)
 
+ [![GitHub issues][issues-image]][issues-url]
+ [![Github Pulls][pulls-image]][pulls-url]
+ [![GitHub stars][stars-image]][stars-url]
+ [![GitHub forks][forks-image]][forks-url]
+ [![Github Downloads][download-image]][download-url]
+ [![license][license-image]][license-url]
+ ![repo-size][repo-size-image]
+
 简体中文|[English](README.en.md)
 
 ## 项目简介
@@ -89,3 +97,31 @@ cargo run
 # 许可证
 
 本项目基于 [MIT 许可证](LICENSE)发布，允许任何组织和个人免费使用。
+
+[issues-url]: https://github.com/TC999/zed-loc/issues "议题"
+[issues-image]: https://img.shields.io/github/issues/TC999/zed-loc?style=flat-square&logo=github&label=议题
+
+[pulls-url]: https://github.com/TC999/zed-loc/pulls "拉取请求"
+[pulls-image]: https://img.shields.io/github/issues-pr-raw/TC999/zed-loc?style=flat&logo=github&%3Fcolor%3Dgreen&label=%E6%8B%89%E5%8F%96%E8%AF%B7%E6%B1%82
+
+[stars-url]: https://github.com/TC999/zed-loc/stargazers "星标"
+[stars-image]: https://img.shields.io/github/stars/TC999/zed-loc?style=flat-square&logo=github&label=星标
+
+[forks-url]: https://github.com/TC999/zed-loc/fork "复刻"
+[forks-image]: https://img.shields.io/github/forks/TC999/zed-loc?style=flat-square&logo=github&label=复刻
+
+[discussions-url]: https://github.com/TC999/zed-loc/discussions "讨论"
+
+[hits-url]: https://hits.dwyl.com/ "访问量"
+[hits-image]: https://custom-icon-badges.demolab.com/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FTC999%2Fzed-loc.json%3Fcolor%3Dgreen&label=%E8%AE%BF%E9%97%AE%E9%87%8F&logo=graph 
+
+[repo-url]: https://github.com/TC999/zed-loc "仓库地址"
+
+[repo-size-image]:https://img.shields.io/github/repo-size/TC999/zed-loc?style=flat-square&label=%E4%BB%93%E5%BA%93%E5%A4%A7%E5%B0%8F
+
+
+[download-url]: https://github.com/TC999/zed-loc/releases/latest "下载"
+[download-image]: https://img.shields.io/github/downloads/TC999/zed-loc/total?style=flat-square&logo=github&label=%E6%80%BB%E4%B8%8B%E8%BD%BD%E6%95%B0 "总下载数"
+
+[license-url]: https://github.com/TC999/zed-loc/blob/master/LICENSE "许可证"
+[license-image]: https://custom-icon-badges.demolab.com/github/license/TC999/zed-loc?style=flat&logo=law&label=%E8%AE%B8%E5%8F%AF%E8%AF%81
