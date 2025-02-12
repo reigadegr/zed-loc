@@ -4854,6 +4854,11 @@
     "Select Theme...": "选择主题...",
     "Settings Changed": "设置已更改"
   },
+  "zed/crates/theme_selector/src/icon_theme_selector.rs": {
+    "error loading icon theme {}: {err}": "加载图标主题 {} 时出错：{err}",
+    "Select Icon Theme...": "选择图标主题...",
+    "Settings Changed": "设置已更改"
+  },
   "zed/crates/time_format/src/time_format.rs": {
     "Today at {}": "今天 {}",
     "Yesterday at {}": "昨天 {}",
@@ -4927,6 +4932,7 @@
     "Settings": "设置",
     "Key Bindings": "键绑定",
     "Themes…": "主题…",
+    "Icon Themes…": "图标主题…",
     "Extensions": "扩展",
     "Book Onboarding": "预订入职",
     "Sign Out": "登出",
