@@ -65,8 +65,13 @@ jobs:
           key: ${{ matrix.backend }}
           workspaces: "zed -> target"
 
-      - name: 设置 Rust 标记
-        run: pwsh ./Parse-Rustflags.ps1 ${{ matrix.rustflags }}
+      - name: Install PSToml module
+        shell: pwsh
+        run: Install-Module -Name PSToml -Scope CurrentUser -Force
+
+      - name: Setup rustflags
+        shell: pwsh
+        run: ./Parse-Rustflags.ps1 ${{ matrix.rustflags }}
 
       - name: 编译发行版
         working-directory: zed
