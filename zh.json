@@ -2623,7 +2623,7 @@
     "Upstream is gone": "上游不见了",
     "Select a repository": "选择仓库",
     "co-authors": "",
-    "Add co-authored-by:{}{}": "添加",
+    "Add co-authored-by:{}{}": "添加共同作者：{}{}",
     "Commit Tracked": "提交追踪",
     "<no branch>": "<无分支>",
     "Uncommit": "撤销",
