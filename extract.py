@@ -250,11 +250,13 @@ input_file_paths = [
     r'zed\crates\language_selector\src\language_selector.rs',
     # language_models
     r'zed\crates\language_models\src\provider\anthropic.rs',
+    r'zed\crates\language_models\src\provider\bedrock.rs',
     r'zed\crates\language_models\src\provider\cloud.rs',
     r'zed\crates\language_models\src\provider\copilot_chat.rs',
     r'zed\crates\language_models\src\provider\deepseek.rs',
     r'zed\crates\language_models\src\provider\google.rs',
     r'zed\crates\language_models\src\provider\lmstudio.rs',
+    r'zed\crates\language_models\src\provider\mistral.rs',
     r'zed\crates\language_models\src\provider\ollama.rs',
     r'zed\crates\language_models\src\provider\open_ai.rs',
     r'zed\crates\language_models\src\logging.rs',
