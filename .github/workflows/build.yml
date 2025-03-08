@@ -84,7 +84,7 @@ jobs:
           path: zed/target/release/zed.exe
 
   build-dpkg-x86:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: 设置 Python 3.10
         uses: actions/setup-python@v3
