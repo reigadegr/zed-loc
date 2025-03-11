@@ -2553,6 +2553,16 @@
     "not a GitLab URL": "不是 GitLab 链接",
     "GitLab Self-Hosted": "GitLab 自托管"
   },
+  "zed/crates/git_ui/src/branch_picker.rs": {
+    "No active repository": "没有活动的代码仓库",
+    "Failed to create branch": "创建分支失败",
+    "Select branch...": "选择分支...",
+    "Failed to change branch": "切换分支失败",
+    "Create branch \"{}\"…": "创建分支 \"{}\"…",
+    "based off {}": "基于 {}",
+    "based off the current branch": "基于当前分支",
+    "no commits found": "未找到提交记录"
+  },
   "zed/crates/git_ui/src/git_panel.rs": {
     "Enter commit message": "键入提交信息",
     "commit editor must be singleton": "提交编辑器必须是单例",
