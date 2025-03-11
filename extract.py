@@ -457,8 +457,8 @@ for input_file_path in input_file_paths:
     with open(input_file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    # 使用正则表达式查找所有引号中的字符串
-    pattern = r'"(.*?)"'
+    # 使用正则表达式查找所有引号中的字符串，考虑转义引号的情况
+    pattern = r'"((?:\\.|[^"\\])*)"'
     matches = re.findall(pattern, content)
 
     # 构建JSON数据
