@@ -201,6 +201,7 @@ input_file_paths = [
     r'zed\crates\git_hosting_providers\src\providers\github.rs',
     r'zed\crates\git_hosting_providers\src\providers\gitlab.rs',
     # git_ui
+    r'zed\crates\git_ui\src\branch_picker.rs',
     r'zed\crates\git_ui\src\git_panel.rs',
     # go_to_line
     r'zed\crates\go_to_line\src\cursor_position.rs',
