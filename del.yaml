@@ -1,6 +1,7 @@
 global: # 全局规则，对所有文件生效
   - "macos"
   - "linux"
+  - "Linux"
   - "windows"
   - "freebsd"
   - "Rust"
