@@ -203,6 +203,8 @@ input_file_paths = [
     # git_ui
     r'zed\crates\git_ui\src\branch_picker.rs',
     r'zed\crates\git_ui\src\git_panel.rs',
+    r'zed\crates\git_ui\src\git_ui.rs',
+    r'zed\crates\git_ui\src\project_diff.rs',
     # go_to_line
     r'zed\crates\go_to_line\src\cursor_position.rs',
     r'zed\crates\go_to_line\src\go_to_line.rs',
