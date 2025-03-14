@@ -2651,7 +2651,7 @@
     "Push": "推送",
     "Upstream is ahead of local branch": "上游领先于本地分支",
     "Push ({})": "推送 ({})",
-    "Upstream matches local branch": "",
+    "Upstream matches local branch": "上游匹配本地分支",
     "Publish": "发布",
     "Discard Tracked Changes": "放弃已追踪的更改",
     "Git Committed": "Git 已提交",
