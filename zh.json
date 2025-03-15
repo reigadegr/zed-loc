@@ -2637,6 +2637,27 @@
     "Deleted": "已删除",
     "Conflicted": "冲突"
   },
+  "zed/crates/git_ui/src/remote_output.rs": {
+    "Already up to date": "已经是最新的",
+    "Synchronized with remotes": "与远程同步",
+    "Failed to get last line of output": "获取输出的最后一行失败",
+    "Failed to get first word of last line": "获取最后一行的第一个词失败",
+    "Everything up to date": "一切都是最新的",
+    "Updating": "正在更新",
+    "Received {} file change{} from {}": "从 {} 收到 {} 个文件更改{}",
+    "s": " ",
+    "Fast forwarded from {}": "快速前进自 {}",
+    "Merge": "合并",
+    "Merged {} file change{} from {}": "从 {} 合并了 {} 个文件更改{}",
+    "Merged from {}": "从 {} 合并",
+    "Successfully rebased": "成功变基",
+    "Successfully rebased from {}": "成功从 {} 变基",
+    "Successfully pulled from {}": "成功从 {} 拉取",
+    "* [new branch]": "* [新分支]",
+    "Create a pull request": "创建拉取请求",
+    "Published {} to {}": "发布 {} 至 {}",
+    "Pushed {} to {}": "推送 {} 至 {}"
+  },
   "zed/crates/git_ui/src/project_diff.rs": {
     "Git Diff Opened": "已打开 Git 差异",
     "Git Panel": "Git 面板",
