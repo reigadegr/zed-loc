@@ -2853,9 +2853,7 @@
     "name": "",
     "no action type registered for {:?}": "",
     "no action type registered for {}": "",
-    "Attempting to build action {}": "",
-    "The `": "",
-    "` action, see [`gpui::actions!`]": ""
+    "Attempting to build action {}": ""
   },
   "zed/crates/gpui/src/app.rs": {
     "TRACK_THREAD_BORROWS": "",
