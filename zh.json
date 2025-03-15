@@ -2610,7 +2610,7 @@
     "Trash {}?": "回收 {}？",
     "Failed to trash file": "回收文件失败",
     "HEAD": "",
-    "\nand {} more…": "",
+    "\nand {} more…": "\n和 {} 个更多…",
     "Discard changes to these files?": "丢弃这些文件的更改？",
     "Trash these files?": "回收这些文件？",
     "Failed to trash files": "回收文件失败",

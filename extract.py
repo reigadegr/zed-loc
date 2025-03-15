@@ -205,6 +205,7 @@ input_file_paths = [
     r'zed\crates\git_ui\src\git_panel.rs',
     r'zed\crates\git_ui\src\git_ui.rs',
     r'zed\crates\git_ui\src\project_diff.rs',
+    r'zed\crates\git_ui\src\remote_output.rs',
     # go_to_line
     r'zed\crates\go_to_line\src\cursor_position.rs',
     r'zed\crates\go_to_line\src\go_to_line.rs',
