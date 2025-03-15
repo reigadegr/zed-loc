@@ -1,4 +1,5 @@
 global: # 全局规则，对所有文件生效
+  - "gnu"
   - "macos"
   - "linux"
   - "Linux"
