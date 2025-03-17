@@ -2786,7 +2786,6 @@
     "Attempting to build action {}": ""
   },
   "zed/crates/gpui/src/app.rs": {
-    "TRACK_THREAD_BORROWS": "",
     "borrowed {thread_id:?}": "",
     "dropped borrow from {thread_id:?}": "",
     "dropped {thread_id:?}": "",
@@ -3008,15 +3007,11 @@
     "LoggedIn": "",
     "person": "",
     "time": "",
-    "/// This is a doc comment\n/// that spans multiple lines": "",
-    "// This is a single-line annotation": "",
     "second buffer: {:?}": "",
     "DONE": "",
     "string": "",
     "comment": "",
     "element": "",
-    "ZERO\none\ntwo\nthree\n": "",
-    "ZERO\none\n1.5\ntwo\nTHREE\n": "",
     "invalid `MIN_PEERS` variable": "",
     "invalid `MAX_PEERS` variable": "",
     "OPERATIONS": "",
