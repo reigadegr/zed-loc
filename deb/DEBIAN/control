@@ -1,5 +1,5 @@
 Package: zed-dev
-Version: 0.171.0
+Version: 0.179.0
 Section: utils
 Priority: optional
 Architecture: amd64
