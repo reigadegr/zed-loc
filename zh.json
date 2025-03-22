@@ -4931,7 +4931,9 @@
   "zed/crates/theme_selector/src/icon_theme_selector.rs": {
     "error loading icon theme {}: {err}": "加载图标主题 {} 时出错：{err}",
     "Select Icon Theme...": "选择图标主题...",
-    "Settings Changed": "设置已更改"
+    "Settings Changed": "设置已更改",
+    "View Icon Theme Docs": "查看图标主题文档",
+    "Install Icon Themes": "安装图标主题"
   },
   "zed/crates/time_format/src/time_format.rs": {
     "Today at {}": "今天 {}",
