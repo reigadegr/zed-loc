@@ -5018,7 +5018,6 @@
     "Use WindowControl::new_close() for close control.": "使用 WindowControl::new_close() 以获取关闭控件。"
   },
   "zed/crates/toolchain_selector/src/active_toolchain.rs": {
-    "Toolchain": "",
     "Select {}": "选择 {}"
   },
   "zed/crates/toolchain_selector/src/toolchain_selector.rs": {
