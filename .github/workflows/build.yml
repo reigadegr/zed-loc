@@ -223,10 +223,12 @@ jobs:
           mv artifacts/zed-release/zed.exe zed-release/
           zip -r zed-windows.zip zed-release/*
 
-      - name: debian
+      - name: linux
         run: |
           mv artifacts/zed-linux-x86_64.deb/zed-linux-x86_64.deb zed-linux-x86_64.deb
           mv artifacts/zed-linux-arm64.deb/zed-linux-arm64.deb zed-linux-arm64.deb
+          mv artifacts/zed-linux-x86_64/zed-linux-x86_64.tar.gz zed-linux-x86_64.tar.gz
+          mv artifacts/zed-linux-arm64/zed-linux-arm64.tar.gz zed-linux-arm64.tar.gz
 
       - name: Upload release build artifacts to GitHub Release
         uses: softprops/action-gh-release@v2
@@ -239,3 +241,5 @@ jobs:
             zed-windows.zip
             zed-linux-x86_64.deb
             zed-linux-arm64.deb
+            zed-linux-x86_64.tar.gz
+            zed-linux-arm64.tar.gz
