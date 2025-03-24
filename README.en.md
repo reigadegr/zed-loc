@@ -52,7 +52,7 @@ python3 delete.py
 
 Then save the `strings.json` file with the target language code as the filename. After completing the translation of the strings, run the following command to replace the strings:
 ```bash
-python3 replace.py
+python3 replace.py {path/to/lang.json}
 ```
 
 ### Building
