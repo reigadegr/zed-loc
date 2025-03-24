@@ -9,7 +9,7 @@
  [![license][license-image]][license-url]
  ![repo-size][repo-size-image]
 
-简体中文|[English](README.en.md)
+简体中文|[English](README.en.md)|[日本語](README.ja.md)
 
 ## 项目简介
 
