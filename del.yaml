@@ -1,9 +1,11 @@
 global: # 全局规则，对所有文件生效
   - "gnu"
   - "macos"
+  - "macOS"
   - "linux"
   - "Linux"
   - "windows"
+  - "Windows"
   - "freebsd"
   - "Rust"
   - "RUST_LOG"
@@ -19,6 +21,7 @@ global: # 全局规则，对所有文件生效
   - "/"
   - "Jupyter"
   - "Zed"
+  - "zed"
   - "⋯"
 "zed/crates/activity_indicator/src/activity_indicator.rs":
   - " ({}%)"
