@@ -93,6 +93,9 @@ cargo run
 <a href="https://github.com/shenjackyuanjie" title="shenjack">
   <img src="https://avatars.githubusercontent.com/u/54507071?v=4" width="42;" alt="shenjack"/>
 </a>
+<a href="https://github.com/oper0" title="oper0">
+  <img src="https://avatars.githubusercontent.com/u/204131036?v=4" width="42;" alt="oper0"/>
+</a>
 
 # 许可证
 
@@ -113,7 +116,7 @@ cargo run
 [discussions-url]: https://github.com/TC999/zed-loc/discussions "讨论"
 
 [hits-url]: https://hits.dwyl.com/ "访问量"
-[hits-image]: https://custom-icon-badges.demolab.com/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FTC999%2Fzed-loc.json%3Fcolor%3Dgreen&label=%E8%AE%BF%E9%97%AE%E9%87%8F&logo=graph 
+[hits-image]: https://custom-icon-badges.demolab.com/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FTC999%2Fzed-loc.json%3Fcolor%3Dgreen&label=%E8%AE%BF%E9%97%AE%E9%87%8F&logo=graph
 
 [repo-url]: https://github.com/TC999/zed-loc "仓库地址"
 
