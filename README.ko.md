@@ -1,7 +1,7 @@
 <!--ChatGPT-4o에 의해 번역됨-->
 <!---![zed](https://avatars.githubusercontent.com/u/79345384?s=200&v=4)--->
 # 🌏 zed-loc (Zed 현지화)
-
+ [![Crowdin][crowdin-image]][crowdin-url]
  [![GitHub issues][issues-image]][issues-url]
  [![Github Pulls][pulls-image]][pulls-url]
  [![GitHub stars][stars-image]][stars-url]
@@ -100,6 +100,9 @@ cargo run
 # 라이선스
 
 이 프로젝트는 [MIT 라이선스](LICENSE)에 따라 공개되며, 모든 조직과 개인이 무료로 사용할 수 있습니다.
+
+[crowdin-url]: https://crowdin.com/project/zed-editor
+[crowdin-image]: https://badges.crowdin.net/zed-editor/localized.svg
 
 [issues-url]: https://github.com/TC999/zed-loc/issues "이슈"
 [issues-image]: https://img.shields.io/github/issues/TC999/zed-loc?style=flat-square&logo=github&label=이슈
