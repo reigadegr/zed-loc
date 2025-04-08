@@ -63,7 +63,7 @@ python3 delete.py
 
 `strings.json` 파일을 대상 언어 코드 이름으로 새로 저장한 후, 번역이 완료되면 다음 명령어를 실행하여 문자열을 교체합니다:
 ```bash
-python3 replace.py
+python3 replace.py ko\ko-KR.json
 ```
 
 ### 빌드
