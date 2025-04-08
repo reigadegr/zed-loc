@@ -1,9 +1,16 @@
 import json
 import re
 import os
+import sys
 
-# 定义文件路径，自行修改词条文件名
-json_file_path = 'zh.json'
+# 检查是否有命令行参数
+if len(sys.argv) > 1:
+    json_file_path = sys.argv[1]
+    print(f'Using JSON file: {json_file_path}')
+else:
+    # 定义文件路径，自行修改词条文件名
+    json_file_path = 'zh.json'
+
 missing_files = []
 
 # 读取JSON文件内容
