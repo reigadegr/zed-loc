@@ -1,7 +1,7 @@
 <!--Translate By GPT-4o-->
 # 🌏 zed-loc (Zed Localization)
 
-[简体中文](README.md)|English|[日本語](README.ja.md)
+[简体中文](README.md)|**English**|[日本語](README.ja.md)|[한국어](README.ko.md)
 
 ## Project Overview
 

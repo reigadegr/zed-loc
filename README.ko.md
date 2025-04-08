@@ -10,7 +10,7 @@
  [![license][license-image]][license-url]
  ![repo-size][repo-size-image]
 
-简体中文|[English](README.en.md)|[日本語](README.ja.md)
+简体中文|[English](README.en.md)|[日本語](README.ja.md)|**한국어**
 
 ## 프로젝트 개요
 

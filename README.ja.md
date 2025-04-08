@@ -1,6 +1,6 @@
 # 🌏 zed-loc (Zed のローカライズ)
 
-[简体中文](README.md)|[English](README.en.md)|日本語
+[简体中文](README.md)|[English](README.en.md)|**日本語**|[한국어](README.ko.md)
 
 ## 概要
 
