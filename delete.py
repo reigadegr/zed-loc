@@ -1,6 +1,7 @@
 import sys
 import json
 import yaml
+import re
 
 # 定义文件路径
 json_file_path = 'string.json'
@@ -8,10 +9,37 @@ yaml_file_path = 'del.yaml'
 
 def delete_keys_from_dict(data, keys_to_delete):
     if isinstance(data, dict):
-        return {key: delete_keys_from_dict(value, keys_to_delete) for key, value in data.items() if key not in keys_to_delete}
+        return {
+            key: delete_keys_from_dict(value, keys_to_delete)
+            for key, value in data.items()
+            if not should_delete(key, keys_to_delete)
+        }
     if isinstance(data, list):
         return [delete_keys_from_dict(item, keys_to_delete) for item in data]
     return data
+
+def should_delete(key, keys_to_delete):
+    # 检查全局删除规则
+    if key in keys_to_delete:
+        return True
+
+    # 检查是否为网址
+    if re.match(r'https?://', key):
+        return True
+
+    # 检查是否为文件路径
+    if re.match(r'^[a-zA-Z]:[\\/]|^/|^\.{1,2}/', key):
+        return True
+
+    # 检查是否为纯数字
+    if key.isdigit():
+        return True
+
+    # 检查是否为纯标点符号
+    if re.match(r'^[^\w\s]+$', key):
+        return True
+
+    return False
 
 def main(strings: str, deletes: str):
 
