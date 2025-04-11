@@ -28,7 +28,7 @@ def should_delete(key, keys_to_delete):
         return True
 
     # 检查是否为文件路径
-    if re.match(r'^[a-zA-Z]:[\\/]|^/|^\.{1,2}/', key):
+    if re.match(r'.+\.[a-zA-Z0-9]{1,5}$', key):
         return True
 
     # 检查是否为纯数字
