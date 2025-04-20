@@ -59,7 +59,7 @@ python3 delete.py
 最後に、`strings.json` を目標言語コードに合わせたファイル名に保存し、置換スクリプトを実行します。
 
 ```bash
-python3 replace.py  ja/ja-JP.json
+python3 replace.py ja/ja-JP.json
 ```
 
 ## ビルド
