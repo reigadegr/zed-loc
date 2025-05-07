@@ -21,7 +21,7 @@ jobs:
       - name: 手动同步 zed 源代码
         uses: actions/checkout@v4
         with:
-          repository: zed-industries/zed
+          repository: tc999/zed
           ref: main
           path: zed
           
