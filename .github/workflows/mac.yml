@@ -1,0 +1,35 @@
+name: MacOS 编译
+on:
+    workflow_dispatch:
+
+jobs:
+  bundle-mac:
+    timeout-minutes: 60
+    name: Create a macOS bundle
+    runs-on: macos-latest
+    steps:
+      - name: Install Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "18"
+
+      - name: 设置 Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - uses: actions/checkout@v4
+      - name: 手动同步 zed 源代码
+        uses: actions/checkout@v4
+        with:
+          repository: zed-industries/zed
+          ref: main
+          path: zed
+          
+      - name: 替换
+        run: python3 replace.py
+
+      - name: Create macOS app bundle
+        run: zed/script/bundle-mac
+
+      - name: Upload Zed Nightly
+        run: zed/script/upload-nightly macos
