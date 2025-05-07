@@ -29,7 +29,7 @@ jobs:
         run: python3 replace.py
 
       - name: Create macOS app bundle
-        run: zed/script/bundle-mac
+        run: ./zed/script/bundle-mac
 
       - name: Upload Zed Nightly
-        run: zed/script/upload-nightly macos
+        run: ./zed/script/upload-nightly macos
