@@ -8,7 +8,7 @@ env:
 
 jobs:
   build-linux: # 脚本来自 zed 官方仓库
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: 设置 Python 3.10
         uses: actions/setup-python@v3
