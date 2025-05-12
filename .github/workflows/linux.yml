@@ -35,20 +35,23 @@ jobs:
 
       - name: 创建 Linux .tar.gz 包
         run: cd zed && script/bundle-linux
+      
+      - name: 上传
+        run: cd zed && script/upload-nightly linux-targz
 
-      - name: 移动文件
-        run: mv zed/target/release/zed-*-linux-x86_64.tar.gz zed-linux-x86_64.tar.gz
+      #- name: 移动文件
+      #  run: mv zed/target/release/zed-*-linux-x86_64.tar.gz zed-linux-x86_64.tar.gz
 
-      - name: 上传文件
-        uses: actions/upload-artifact@v4
-        with:
-          name: zed-linux-x86_64
-          path: zed-linux-x86_64.tar.gz
-      - name: 上传文件
-        uses: actions/upload-artifact@v4
-        with:
-          name: zed-remote-server-linux-x86_64
-          path: zed/target/zed-remote-server-linux-x86_64
+      #- name: 上传文件
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: zed-linux-x86_64
+      #    path: zed-linux-x86_64.tar.gz
+      #- name: 上传文件
+      #  uses: actions/upload-artifact@v4
+      #  with:
+      #    name: zed-remote-server-linux-x86_64
+      #    path: zed/target/zed-remote-server-linux-x86_64
 
   bundle-linux-arm:
     runs-on: ubuntu-22.04-arm
@@ -76,12 +79,15 @@ jobs:
 
       - name: 创建 Linux .tar.gz 包
         run: cd zed && script/bundle-linux
+      
+      - name: 上传
+        run: cd zed && script/upload-nightly linux-targz
 
-      - name: 移动
-        run: mv zed/target/release/zed-*.tar.gz zed-linux-arm64.tar.gz
+      # - name: 移动
+      #   run: mv zed/target/release/zed-*.tar.gz zed-linux-arm64.tar.gz
 
-      - name: 上传文件
-        uses: actions/upload-artifact@v4
-        with:
-          name: zed-linux-arm64
-          path: zed-linux-arm64.tar.gz
+      # - name: 上传文件
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: zed-linux-arm64
+      #     path: zed-linux-arm64.tar.gz
