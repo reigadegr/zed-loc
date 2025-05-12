@@ -8,6 +8,8 @@ input_file_paths = [
     # 文件读取规则，读代码时可跳过，如果词条缺失自行添加文件路径
     # activity_indicator
     r'zed\crates\activity_indicator\src\activity_indicator.rs',
+    # agent gpt 面板
+    r'zed\crates\agent\src\agent_panel.rs',
     # anthropic
     r'zed\crates\anthropic\src\anthropic.rs',
     # r'zed\crates\anthropic\src\supported_countries.rs',
