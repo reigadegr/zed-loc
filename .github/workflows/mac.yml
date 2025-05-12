@@ -32,6 +32,11 @@ jobs:
       - name: 替换
         run: python3 replace.py
 
+      - name: Xcode
+        run: |
+          sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+          sudo xcodebuild -license accept
+
       - name: Create macOS app bundle
         run: cd zed && script/bundle-mac
 
