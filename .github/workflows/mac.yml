@@ -37,7 +37,10 @@ jobs:
           sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
           sudo xcodebuild -license accept
 
-      - name: Create macOS app bundle
+      - name: Cmake
+        run: brew install cmake
+
+      - name: 编译包
         run: cd zed && script/bundle-mac
 
       - name: Upload Zed Nightly
