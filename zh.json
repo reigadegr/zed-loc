@@ -2243,7 +2243,17 @@
     "Incompatible": "不兼容"
   },
   "zed/crates/extensions_ui/src/extensions_ui.rs": {
-    "failed to install dev extension": "安装开发扩展失败",
+    "Failed to install dev extension: {:?}": "安装开发扩展失败: {:?}",
+    "Failed to install dev extension: {}": "安装开发扩展失败: {}",
+    "Themes": "主题",
+    "Icon Themes": "图标主题",
+    "Languages": "语言",
+    "Grammars": "语法",
+    "Language Servers": "语言服务器",
+    "MCP Servers": "MCP 服务器",
+    "Slash Commands": "斜杠命令",
+    "Indexed Docs Providers": "索引文件提供者",
+    "Snippets": "片段",
     "permalink": "",
     "link": "",
     "open in": "",
