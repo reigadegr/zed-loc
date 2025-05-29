@@ -37,12 +37,13 @@ jobs:
       - name: 替换
         run: python3 replace.py
 
-      # - name: Xcode
-      #   run: |
-      #     sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-      #     sudo xcodebuild -license accept
-      # - name: Cmake
-      #   run: brew install cmake
+      - name: Xcode
+        run: |
+          sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+          sudo xcodebuild -license accept
+
+      - name: Cmake
+        run: brew install cmake
 
       # - name: Set release channel to nightly
       #   run: |
@@ -53,7 +54,12 @@ jobs:
       #     echo "nightly" > crates/zed/RELEASE_CHANNEL
 
       - name: 编译
-        run: cd zed && script/bundle-mac
+        run: |
+          export CC=/usr/bin/clang
+          export CXX=/usr/bin/clang++
+          export CXXFLAGS="-std=c++17"
+          export CXXFLAGS="-D_LIBCPP_ENABLE_CXX20_FEATURES"
+          cd zed && script/bundle-mac
 
       - name: 移动文件
         run: move macos
@@ -61,7 +67,7 @@ jobs:
       - name: 上传
         uses: actions/upload-artifact@v4
         with:
-          file: |
+          path: |
             Zed-aarch64.dmg
             Zed-x86_64.dmg
             zed-remote-server-*.gz
