@@ -1,6 +1,11 @@
 name: MacOS 编译
 on:
   workflow_dispatch:
+    inputs:
+      branch:
+        type: string
+        default: main
+        description: "分支名"
 
 jobs:
   bundle-mac:
@@ -26,7 +31,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           repository: zed-industries/zed
-          ref: main
+          ref: ${{ inputs.branch }}
           path: zed
 
       - name: 替换
