@@ -96,7 +96,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zed-industries/zed
-          ref: main
+          ref: ${{ inputs.branch }}
           path: zed
       - name: 替换
         run: python3 replace.py
@@ -159,7 +159,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zed-industries/zed
-          ref: main
+          ref: ${{ inputs.branch }}
           path: zed
       - name: 替换
         run: python3 replace.py
@@ -223,7 +223,7 @@ jobs:
       #  id: date
       #  run: echo "CURRENT_DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
-      - name: Create release directories and zip
+      - name: 压缩文件(windows)
         run: |
           mkdir -p zed-release
           mv artifacts/zed-release/zed.exe zed-release/
@@ -238,7 +238,7 @@ jobs:
       - name: build sha256
         run: |
           sha256sum zed-windows.zip zed-linux-x86_64.deb zed-linux-arm64.deb zed-linux-x86_64.tar.gz zed-linux-arm64.tar.gz > sha256sums.txt
-      - name: Upload release build artifacts to GitHub Release
+      - name: 发行
         uses: softprops/action-gh-release@v2
         with:
           name: ${{ inputs.branch }}
