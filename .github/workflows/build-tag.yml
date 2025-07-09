@@ -129,7 +129,7 @@ jobs:
           path: zed-linux-x86_64.tar.gz
 
       - name: 移动
-        run: mv zed-dev.app deb/usr
+        run: mv zed-preview.app deb/usr
 
       - name: 权限修复
         run: chmod 775 deb -R
@@ -189,7 +189,7 @@ jobs:
           path: zed-linux-arm64.tar.gz
 
       - name: 移动
-        run: mv zed-dev.app deb-arm/usr
+        run: mv zed-preview.app deb-arm/usr
 
       - name: 权限修复
         run: chmod 775 deb-arm -R
