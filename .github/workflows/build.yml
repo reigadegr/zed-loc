@@ -10,6 +10,9 @@ on:
         type: string
         default: main
         description: "分支名"
+    
+  schedule:
+    - cron: '0 15 * * *' # 每天北京时间23点（UTC+8, 等于UTC 15点）
 
 env:
   CARGO_TERM_COLOR: always
@@ -47,7 +50,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zed-industries/zed
-          ref: ${{ inputs.branch }}
+          ref: ${{ inputs.branch || 'main' }}
           path: zed
 
       - name: 替换
@@ -96,7 +99,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zed-industries/zed
-          ref: ${{ inputs.branch }}
+          ref: ${{ inputs.branch || 'main' }}
           path: zed
       - name: 替换
         run: python3 replace.py
@@ -156,7 +159,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: zed-industries/zed
-          ref: ${{ inputs.branch }}
+          ref: ${{ inputs.branch || 'main' }}
           path: zed
       - name: 替换
         run: python3 replace.py
@@ -201,7 +204,7 @@ jobs:
           path: zed-linux-arm64.deb
 
   release:
-    if: ${{ inputs.release }}
+    if: (github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.release)
     needs: [build-windows, build-dpkg-x86, build-dpkg-arm]
     runs-on: ubuntu-latest
     permissions:
