@@ -106,7 +106,7 @@ jobs:
 
       - name: 同步版本号到 control 文件
         run: |
-          VERSION=$(grep '^version *= *"' zed/cargo.toml | head -n1 | sed -E 's/version *= *"([^"]+)"/\1/')
+          VERSION=$(grep '^version *= *"' zed/Cargo.toml | head -n1 | sed -E 's/version *= *"([^"]+)"/\1/')
           sed -i "s/^Version: .*/Version: $VERSION/" deb/DEBIAN/control
 
       - name: 安装 Linux 依赖项
@@ -171,7 +171,7 @@ jobs:
 
       - name: 同步版本号到 control 文件
         run: |
-          VERSION=$(grep '^version *= *"' zed/cargo.toml | head -n1 | sed -E 's/version *= *"([^"]+)"/\1/')
+          VERSION=$(grep '^version *= *"' zed/Cargo.toml | head -n1 | sed -E 's/version *= *"([^"]+)"/\1/')
           sed -i "s/^Version: .*/Version: $VERSION/" deb-arm/DEBIAN/control
 
       - name: 安装 Linux 依赖项
