@@ -53,12 +53,16 @@ jobs:
       #     echo "Publishing version: ${version} on release channel nightly"
       #     echo "nightly" > crates/zed/RELEASE_CHANNEL
 
+      - name: 安装 Rust
+        run: |
+          rustup target add x86_64-apple-darwin
+
       - name: 编译
         run: |
-          export CC=/usr/bin/clang
-          export CXX=/usr/bin/clang++
-          export CXXFLAGS="-std=c++17"
-          export CXXFLAGS="-D_LIBCPP_ENABLE_CXX20_FEATURES"
+          #export CC=/usr/bin/clang
+          #export CXX=/usr/bin/clang++
+          #export CXXFLAGS="-std=c++17"
+          #export CXXFLAGS="-D_LIBCPP_ENABLE_CXX20_FEATURES"
           cd zed && script/bundle-mac
 
       - name: 移动文件
