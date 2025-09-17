@@ -1,7 +1,6 @@
 <!---![zed](https://avatars.githubusercontent.com/u/79345384?s=200&v=4)--->
 # 🌏 zed-loc (Zed 汉化)
 
- [![Crowdin][crowdin-image]][crowdin-url]
  [![GitHub issues][issues-image]][issues-url]
  [![Github Pulls][pulls-image]][pulls-url]
  [![GitHub stars][stars-image]][stars-url]
@@ -21,7 +20,7 @@
 - 自动提取源代码中的字符串
 - 生成 JSON 文件，便于翻译
 - GitHub Actions 集成，自动构建和发布
-- 目前每晚手动执行一次汉化构建
+- 目前每晚自动执行一次汉化构建
 
 ## 运行
 ### 配置
@@ -110,9 +109,6 @@ cargo run
 # 许可证
 
 本项目基于 [MIT 许可证](LICENSE)发布，允许任何组织和个人免费使用。
-
-[crowdin-url]: https://zh.crowdin.com/project/zed-editor
-[crowdin-image]: https://badges.crowdin.net/zed-editor/localized.svg
 
 [issues-url]: https://github.com/TC999/zed-loc/issues "议题"
 [issues-image]: https://img.shields.io/github/issues/TC999/zed-loc?style=flat-square&logo=github&label=议题
