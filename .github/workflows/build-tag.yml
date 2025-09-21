@@ -26,7 +26,6 @@ jobs:
           echo "是否发行："
           echo ${{ inputs.release }}
 
-
   build-windows:
     needs: info-show
     runs-on: windows-latest
