@@ -15,7 +15,20 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
+  info-show:
+    runs-on: ubuntu-latest
+    name: 显示编译信息
+    steps:
+      - name: 显示
+        run: |
+          echo "编译版本/分支/提交："
+          echo ${{ inputs.branch }}
+          echo "是否发行："
+          echo ${{ inputs.release }}
+
+
   build-windows:
+    needs: info-show
     runs-on: windows-latest
     strategy:
       matrix:
@@ -85,6 +98,7 @@ jobs:
           path: zed/target/release/zed.exe
 
   build-dpkg-x86:
+    needs: info-show
     runs-on: ubuntu-22.04
     steps:
       - name: 设置 Python 3.10
@@ -152,6 +166,7 @@ jobs:
           path: zed-linux-x86_64.deb
 
   build-dpkg-arm:
+    needs: info-show
     runs-on: ubuntu-22.04-arm
 
     steps:
