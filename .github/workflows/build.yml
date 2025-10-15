@@ -11,8 +11,8 @@ on:
         default: main
         description: "分支名"
     
-  schedule:
-    - cron: '0 15 * * *' # 每天北京时间23点（UTC+8, 等于UTC 15点）
+  # schedule:
+    # - cron: '0 15 * * *' # 每天北京时间23点（UTC+8, 等于UTC 15点）
 
 env:
   CARGO_TERM_COLOR: always
